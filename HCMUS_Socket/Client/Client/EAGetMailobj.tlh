@@ -1,0 +1,2825 @@
+// Created by Microsoft (R) C/C++ Compiler Version 14.16.27034.0 (bcb50515).
+//
+// eagetmailobj.tlh
+//
+// C++ source equivalent of Win32 type library ..\\..\\EAGetMailObj\\Release\\EAGetMailObj.dll
+// compiler-generated file created 09/05/24 at 15:10:54 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace EAGetMailObjLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("5fa52c10-18fc-4d81-8542-50f9a2dc60a3"))
+/* LIBID */ __EAGetMailObjLib;
+struct __declspec(uuid("37aebda7-44bf-4c51-b32e-2527312d4ab8"))
+/* dual interface */ ICategory;
+struct __declspec(uuid("3ed5eed7-9ab0-4d85-9665-5c530ebed66a"))
+/* dual interface */ ICategoryCollection;
+struct __declspec(uuid("f7463672-bda9-428f-8a03-e30c0f1b7ea8"))
+/* dual interface */ IMailClient;
+struct __declspec(uuid("860ea4de-9b7d-4c1b-8dc0-67b74b981f41"))
+/* dual interface */ IImap4Folder;
+struct __declspec(uuid("2bd47f56-8b9e-4b8f-a253-63c9d79bd674"))
+/* dual interface */ IFolderCollection;
+struct __declspec(uuid("ce217339-cbc8-4a35-b0f1-93e376462658"))
+/* dual interface */ IMailInfo;
+struct __declspec(uuid("33520f78-af50-44e7-9730-00e4083aa765"))
+/* dual interface */ IMailServer;
+struct __declspec(uuid("2f71e6cf-9417-46eb-b7c8-1760fdac17c6"))
+/* dual interface */ IMail;
+struct __declspec(uuid("98790582-ce44-47c9-8f70-90dcfeaf46ac"))
+/* dual interface */ ICertificate;
+struct __declspec(uuid("372b933c-cb50-48c5-81e5-b1c3122379b1"))
+/* dual interface */ IMailReport;
+struct __declspec(uuid("00ac14c1-bcb6-48af-bebf-c1f41ba7cf07"))
+/* dual interface */ IHeaderCollection;
+struct __declspec(uuid("ef9b19ff-8766-4931-8a3a-405a91475645"))
+/* dual interface */ IHeaderItem;
+struct __declspec(uuid("d531d50d-cdc6-400a-b938-46d36382173e"))
+/* dual interface */ IAttachment;
+struct __declspec(uuid("9e7048e1-3574-4efa-ae7b-67a015ba470f"))
+/* dual interface */ IMailAddress;
+struct __declspec(uuid("bdf40f78-205a-4651-b0c6-4b2870485e5d"))
+/* dual interface */ IAddressCollection;
+struct __declspec(uuid("380c4c5a-c4af-4314-9b5f-53ec125de749"))
+/* dual interface */ IAttachmentCollection;
+struct __declspec(uuid("e9777121-432a-41a1-a895-be0bbbdd1969"))
+/* dual interface */ IGetMailInfosParamType;
+struct __declspec(uuid("861d4252-62f3-4ecd-8f48-bd1c1f703cd1"))
+/* dual interface */ IMailInfoCollection;
+struct __declspec(uuid("6aa9c7ee-bbd2-4941-a348-9e9c343366d2"))
+/* dual interface */ ITools;
+struct __declspec(uuid("63d8237a-5dc3-4c82-be6b-073b32a78759"))
+/* dual interface */ IUIDLManager;
+struct __declspec(uuid("2bb66cc9-2e20-4567-97c0-494109f5b12b"))
+/* dual interface */ IUIDLItem;
+struct __declspec(uuid("40936428-092e-4974-8315-0163b6d33e94"))
+/* dual interface */ ISimpleJsonArray;
+struct __declspec(uuid("9c825340-7b0a-432c-b082-deeb8b2a3e64"))
+/* dual interface */ ISimpleJsonParser;
+struct __declspec(uuid("097f935e-a866-40d1-84fe-e453727f53f0"))
+/* dual interface */ IHttpListener;
+struct __declspec(uuid("3e500587-4a39-4cd9-be41-5cdd0d0a26c3"))
+/* dual interface */ IBrowserUi;
+struct __declspec(uuid("f9c5042f-13e4-42b7-8160-f511c74a9904"))
+/* dispinterface */ _IMailClientEvents;
+struct /* coclass */ MailClient;
+struct /* coclass */ Attachment;
+struct /* coclass */ Certificate;
+struct /* coclass */ HeaderCollection;
+struct /* coclass */ HeaderItem;
+struct /* coclass */ Imap4Folder;
+struct /* coclass */ Mail;
+struct /* coclass */ MailAddress;
+struct /* coclass */ MailInfo;
+struct /* coclass */ MailServer;
+struct /* coclass */ MailReport;
+struct /* coclass */ Tools;
+struct /* coclass */ UIDLManager;
+struct /* coclass */ UIDLItem;
+struct /* coclass */ GetMailInfosParamType;
+struct /* coclass */ AddressCollection;
+struct /* coclass */ AttachmentCollection;
+struct /* coclass */ MailInfoCollection;
+struct /* coclass */ FolderCollection;
+struct /* coclass */ CategoryCollection;
+struct /* coclass */ Category;
+struct /* coclass */ SimpleJsonArray;
+struct /* coclass */ SimpleJsonParser;
+struct /* coclass */ OAuthResponseParser;
+struct __declspec(uuid("2cba3e15-44bb-428c-9dd5-68dc02957c37"))
+/* dual interface */ IOAuthResponseParser;
+struct /* coclass */ BrowserUi;
+struct __declspec(uuid("d6db71a9-c346-4da0-a6cf-9ad59276de37"))
+/* dispinterface */ _ILocalHttpListenerEvents;
+struct /* coclass */ HttpListener;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICategory, __uuidof(ICategory));
+_COM_SMARTPTR_TYPEDEF(ICategoryCollection, __uuidof(ICategoryCollection));
+_COM_SMARTPTR_TYPEDEF(IMailInfo, __uuidof(IMailInfo));
+_COM_SMARTPTR_TYPEDEF(IMailServer, __uuidof(IMailServer));
+_COM_SMARTPTR_TYPEDEF(ICertificate, __uuidof(ICertificate));
+_COM_SMARTPTR_TYPEDEF(IHeaderItem, __uuidof(IHeaderItem));
+_COM_SMARTPTR_TYPEDEF(IHeaderCollection, __uuidof(IHeaderCollection));
+_COM_SMARTPTR_TYPEDEF(IMailReport, __uuidof(IMailReport));
+_COM_SMARTPTR_TYPEDEF(IAttachment, __uuidof(IAttachment));
+_COM_SMARTPTR_TYPEDEF(IMailAddress, __uuidof(IMailAddress));
+_COM_SMARTPTR_TYPEDEF(IAddressCollection, __uuidof(IAddressCollection));
+_COM_SMARTPTR_TYPEDEF(IAttachmentCollection, __uuidof(IAttachmentCollection));
+_COM_SMARTPTR_TYPEDEF(IMail, __uuidof(IMail));
+_COM_SMARTPTR_TYPEDEF(IGetMailInfosParamType, __uuidof(IGetMailInfosParamType));
+_COM_SMARTPTR_TYPEDEF(IMailInfoCollection, __uuidof(IMailInfoCollection));
+_COM_SMARTPTR_TYPEDEF(ITools, __uuidof(ITools));
+_COM_SMARTPTR_TYPEDEF(IUIDLItem, __uuidof(IUIDLItem));
+_COM_SMARTPTR_TYPEDEF(IUIDLManager, __uuidof(IUIDLManager));
+_COM_SMARTPTR_TYPEDEF(ISimpleJsonArray, __uuidof(ISimpleJsonArray));
+_COM_SMARTPTR_TYPEDEF(ISimpleJsonParser, __uuidof(ISimpleJsonParser));
+_COM_SMARTPTR_TYPEDEF(IHttpListener, __uuidof(IHttpListener));
+_COM_SMARTPTR_TYPEDEF(IBrowserUi, __uuidof(IBrowserUi));
+_COM_SMARTPTR_TYPEDEF(_IMailClientEvents, __uuidof(_IMailClientEvents));
+_COM_SMARTPTR_TYPEDEF(IOAuthResponseParser, __uuidof(IOAuthResponseParser));
+_COM_SMARTPTR_TYPEDEF(_ILocalHttpListenerEvents, __uuidof(_ILocalHttpListenerEvents));
+_COM_SMARTPTR_TYPEDEF(IMailClient, __uuidof(IMailClient));
+_COM_SMARTPTR_TYPEDEF(IImap4Folder, __uuidof(IImap4Folder));
+_COM_SMARTPTR_TYPEDEF(IFolderCollection, __uuidof(IFolderCollection));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("37aebda7-44bf-4c51-b32e-2527312d4ab8"))
+ICategory : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("3ed5eed7-9ab0-4d85-9665-5c530ebed66a"))
+ICategoryCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLength))
+    long Length;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetLength ( );
+    HRESULT Add (
+        struct ICategory * Category );
+    HRESULT Clear ( );
+    HRESULT RemoveAt (
+        long Index );
+    ICategoryPtr Item (
+        long Index );
+    VARIANT_BOOL Exists (
+        _bstr_t Name );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        struct ICategory * Category ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAt (
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall raw_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct ICategory * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Exists (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+};
+
+struct __declspec(uuid("ce217339-cbc8-4a35-b0f1-93e376462658"))
+IMailInfo : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSize,put=PutSize))
+    long Size;
+    __declspec(property(get=GetUIDL,put=PutUIDL))
+    _bstr_t UIDL;
+    __declspec(property(get=GetIndex,put=PutIndex))
+    long Index;
+    __declspec(property(get=GetIMAP4Flags,put=PutIMAP4Flags))
+    _bstr_t IMAP4Flags;
+    __declspec(property(get=GetChangeKey,put=PutChangeKey))
+    _bstr_t ChangeKey;
+    __declspec(property(get=GetRead,put=PutRead))
+    VARIANT_BOOL Read;
+    __declspec(property(get=GetDeleted,put=PutDeleted))
+    VARIANT_BOOL Deleted;
+    __declspec(property(get=GetPR_ENTRYID,put=PutPR_ENTRYID))
+    _variant_t PR_ENTRYID;
+    __declspec(property(get=GetCategories,put=PutCategories))
+    ICategoryCollectionPtr Categories;
+    __declspec(property(get=GetFollowUpFlag,put=PutFollowUpFlag))
+    _bstr_t FollowUpFlag;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetSize ( );
+    void PutSize (
+        long pVal );
+    _bstr_t GetUIDL ( );
+    void PutUIDL (
+        _bstr_t pVal );
+    long GetIndex ( );
+    void PutIndex (
+        long pVal );
+    _bstr_t GetIMAP4Flags ( );
+    void PutIMAP4Flags (
+        _bstr_t pVal );
+    _bstr_t GetChangeKey ( );
+    void PutChangeKey (
+        _bstr_t pVal );
+    VARIANT_BOOL GetRead ( );
+    void PutRead (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetDeleted ( );
+    void PutDeleted (
+        VARIANT_BOOL pVal );
+    _variant_t GetPR_ENTRYID ( );
+    void PutPR_ENTRYID (
+        const _variant_t & pVal );
+    ICategoryCollectionPtr GetCategories ( );
+    void PutCategories (
+        struct ICategoryCollection * pVal );
+    _bstr_t GetFollowUpFlag ( );
+    void PutFollowUpFlag (
+        _bstr_t pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Size (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Size (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_UIDL (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_UIDL (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Index (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Index (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_IMAP4Flags (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_IMAP4Flags (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ChangeKey (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ChangeKey (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Read (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Read (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_Deleted (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Deleted (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_PR_ENTRYID (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_PR_ENTRYID (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_Categories (
+        /*[out,retval]*/ struct ICategoryCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall put_Categories (
+        /*[in]*/ struct ICategoryCollection * pVal ) = 0;
+      virtual HRESULT __stdcall get_FollowUpFlag (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FollowUpFlag (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("33520f78-af50-44e7-9730-00e4083aa765"))
+IMailServer : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAuthType,put=PutAuthType))
+    long AuthType;
+    __declspec(property(get=GetPassword,put=PutPassword))
+    _bstr_t Password;
+    __declspec(property(get=GetPort,put=PutPort))
+    long Port;
+    __declspec(property(get=GetProtocol,put=PutProtocol))
+    long Protocol;
+    __declspec(property(get=GetProxyProtocol,put=PutProxyProtocol))
+    long ProxyProtocol;
+    __declspec(property(get=GetServer,put=PutServer))
+    _bstr_t Server;
+    __declspec(property(get=GetSocksProxyPassword,put=PutSocksProxyPassword))
+    _bstr_t SocksProxyPassword;
+    __declspec(property(get=GetSocksProxyPort,put=PutSocksProxyPort))
+    long SocksProxyPort;
+    __declspec(property(get=GetSocksProxyServer,put=PutSocksProxyServer))
+    _bstr_t SocksProxyServer;
+    __declspec(property(get=GetSocksProxyUser,put=PutSocksProxyUser))
+    _bstr_t SocksProxyUser;
+    __declspec(property(get=GetSSLType,put=PutSSLType))
+    long SSLType;
+    __declspec(property(get=GetUser,put=PutUser))
+    _bstr_t User;
+    __declspec(property(get=GetSSLConnection,put=PutSSLConnection))
+    VARIANT_BOOL SSLConnection;
+    __declspec(property(get=GetAlias,put=PutAlias))
+    _bstr_t Alias;
+    __declspec(property(get=GetEWSImpersonatedUser,put=PutEWSImpersonatedUser))
+    _bstr_t EWSImpersonatedUser;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetAuthType ( );
+    void PutAuthType (
+        long pVal );
+    _bstr_t GetPassword ( );
+    void PutPassword (
+        _bstr_t pVal );
+    long GetPort ( );
+    void PutPort (
+        long pVal );
+    long GetProtocol ( );
+    void PutProtocol (
+        long pVal );
+    long GetProxyProtocol ( );
+    void PutProxyProtocol (
+        long pVal );
+    _bstr_t GetServer ( );
+    void PutServer (
+        _bstr_t pVal );
+    _bstr_t GetSocksProxyPassword ( );
+    void PutSocksProxyPassword (
+        _bstr_t pVal );
+    long GetSocksProxyPort ( );
+    void PutSocksProxyPort (
+        long pVal );
+    _bstr_t GetSocksProxyServer ( );
+    void PutSocksProxyServer (
+        _bstr_t pVal );
+    _bstr_t GetSocksProxyUser ( );
+    void PutSocksProxyUser (
+        _bstr_t pVal );
+    long GetSSLType ( );
+    void PutSSLType (
+        long pVal );
+    _bstr_t GetUser ( );
+    void PutUser (
+        _bstr_t pVal );
+    IMailServerPtr Copy ( );
+    VARIANT_BOOL GetSSLConnection ( );
+    void PutSSLConnection (
+        VARIANT_BOOL pVal );
+    _bstr_t ToConversationString ( );
+    _bstr_t GetAlias ( );
+    void PutAlias (
+        _bstr_t pVal );
+    void PutEWSImpersonatedUser (
+        _bstr_t pVal );
+    _bstr_t GetEWSImpersonatedUser ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_AuthType (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_AuthType (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Password (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Password (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Port (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Port (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Protocol (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Protocol (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ProxyProtocol (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ProxyProtocol (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Server (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Server (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SocksProxyPassword (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SocksProxyPassword (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SocksProxyPort (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_SocksProxyPort (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_SocksProxyServer (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SocksProxyServer (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SocksProxyUser (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SocksProxyUser (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SSLType (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_SSLType (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_User (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_User (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_Copy (
+        /*[out,retval]*/ struct IMailServer * * pVal ) = 0;
+      virtual HRESULT __stdcall get_SSLConnection (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_SSLConnection (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_ToConversationString (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Alias (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Alias (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall put_EWSImpersonatedUser (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_EWSImpersonatedUser (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("98790582-ce44-47c9-8f70-90dcfeaf46ac"))
+ICertificate : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetHasCertificate))
+    VARIANT_BOOL HasCertificate;
+    __declspec(property(get=GetStore))
+    unsigned __int64 Store;
+    __declspec(property(get=GetHandle,put=PutHandle))
+    unsigned __int64 Handle;
+    __declspec(property(get=GetSerialNumber,put=PutSerialNumber))
+    _bstr_t SerialNumber;
+    __declspec(property(get=GetSubject,put=PutSubject))
+    _bstr_t Subject;
+    __declspec(property(get=GetBase64Thumbprint))
+    _bstr_t Base64Thumbprint;
+    __declspec(property(get=GetThumbprint))
+    _bstr_t Thumbprint;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT AddToStore (
+        long StoreLocation,
+        _bstr_t StoreName );
+    HRESULT FindCertId (
+        unsigned __int64 CertId );
+    HRESULT FindCertIdInStore (
+        unsigned __int64 CertId,
+        unsigned long StoreLocation,
+        _bstr_t StoreName );
+    HRESULT FindSubject (
+        _bstr_t FindKey,
+        long StoreLocation,
+        _bstr_t StoreName );
+    HRESULT Load (
+        const _variant_t & PFXContent,
+        _bstr_t Password,
+        long KeyLocation );
+    HRESULT LoadFromFile (
+        _bstr_t PFXFile,
+        _bstr_t Password,
+        long KeyLocation );
+    HRESULT Unload ( );
+    VARIANT_BOOL GetHasCertificate ( );
+    unsigned __int64 GetStore ( );
+    unsigned __int64 GetHandle ( );
+    void PutHandle (
+        unsigned __int64 pVal );
+    _bstr_t GetSerialNumber ( );
+    void PutSerialNumber (
+        _bstr_t pVal );
+    _bstr_t GetSubject ( );
+    void PutSubject (
+        _bstr_t pVal );
+    _bstr_t GetBase64Thumbprint ( );
+    _bstr_t GetThumbprint ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_AddToStore (
+        /*[in]*/ long StoreLocation,
+        /*[in]*/ BSTR StoreName ) = 0;
+      virtual HRESULT __stdcall raw_FindCertId (
+        /*[in]*/ unsigned __int64 CertId ) = 0;
+      virtual HRESULT __stdcall raw_FindCertIdInStore (
+        /*[in]*/ unsigned __int64 CertId,
+        /*[in]*/ unsigned long StoreLocation,
+        /*[in]*/ BSTR StoreName ) = 0;
+      virtual HRESULT __stdcall raw_FindSubject (
+        /*[in]*/ BSTR FindKey,
+        /*[in]*/ long StoreLocation,
+        /*[in]*/ BSTR StoreName ) = 0;
+      virtual HRESULT __stdcall raw_Load (
+        /*[in]*/ VARIANT PFXContent,
+        /*[in]*/ BSTR Password,
+        /*[in]*/ long KeyLocation ) = 0;
+      virtual HRESULT __stdcall raw_LoadFromFile (
+        /*[in]*/ BSTR PFXFile,
+        /*[in]*/ BSTR Password,
+        /*[in]*/ long KeyLocation ) = 0;
+      virtual HRESULT __stdcall raw_Unload ( ) = 0;
+      virtual HRESULT __stdcall get_HasCertificate (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_Store (
+        /*[out,retval]*/ unsigned __int64 * pVal ) = 0;
+      virtual HRESULT __stdcall get_Handle (
+        /*[out,retval]*/ unsigned __int64 * pVal ) = 0;
+      virtual HRESULT __stdcall put_Handle (
+        /*[in]*/ unsigned __int64 pVal ) = 0;
+      virtual HRESULT __stdcall get_SerialNumber (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SerialNumber (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Subject (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Subject (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Base64Thumbprint (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Thumbprint (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("ef9b19ff-8766-4931-8a3a-405a91475645"))
+IHeaderItem : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetHeaderKey,put=PutHeaderKey))
+    _bstr_t HeaderKey;
+    __declspec(property(get=GetHeaderValue,put=PutHeaderValue))
+    _bstr_t HeaderValue;
+    __declspec(property(get=GetDecodedValue))
+    _bstr_t DecodedValue;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetHeaderKey ( );
+    void PutHeaderKey (
+        _bstr_t pVal );
+    _bstr_t GetHeaderValue ( );
+    void PutHeaderValue (
+        _bstr_t pVal );
+    _bstr_t GetDecodedValue ( );
+    _bstr_t SubValue (
+        _bstr_t SubKey );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_HeaderKey (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_HeaderKey (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_HeaderValue (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_HeaderValue (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DecodedValue (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SubValue (
+        /*[in]*/ BSTR SubKey,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("00ac14c1-bcb6-48af-bebf-c1f41ba7cf07"))
+IHeaderCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetLength))
+    long Length;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    IHeaderItemPtr Item (
+        long Index );
+    _bstr_t GetValueOfKey (
+        _bstr_t HeaderKey );
+    HRESULT Add (
+        struct IHeaderItem * oHeader );
+    HRESULT Insert (
+        long Index,
+        struct IHeaderItem * oHeader );
+    long SearchKey (
+        _bstr_t HeaderKey );
+    HRESULT Clear ( );
+    HRESULT Remove (
+        _bstr_t HeaderKey );
+    HRESULT RemoveAt (
+        long Index );
+    long GetLength ( );
+    IHeaderItemPtr IndexOf (
+        long Index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IHeaderItem * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetValueOfKey (
+        /*[in]*/ BSTR HeaderKey,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct IHeaderItem * oHeader ) = 0;
+      virtual HRESULT __stdcall raw_Insert (
+        /*[in]*/ long Index,
+        /*[in]*/ struct IHeaderItem * oHeader ) = 0;
+      virtual HRESULT __stdcall raw_SearchKey (
+        /*[in]*/ BSTR HeaderKey,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ BSTR HeaderKey ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAt (
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_IndexOf (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IHeaderItem * * pVal ) = 0;
+};
+
+struct __declspec(uuid("372b933c-cb50-48c5-81e5-b1c3122379b1"))
+IMailReport : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetErrCode,put=PutErrCode))
+    _bstr_t ErrCode;
+    __declspec(property(get=GetErrDescription,put=PutErrDescription))
+    _bstr_t ErrDescription;
+    __declspec(property(get=GetOriginalHeaders,put=PutOriginalHeaders))
+    IHeaderCollectionPtr OriginalHeaders;
+    __declspec(property(get=GetOriginalMessageID,put=PutOriginalMessageID))
+    _bstr_t OriginalMessageID;
+    __declspec(property(get=GetOriginalRecipient,put=PutOriginalRecipient))
+    _bstr_t OriginalRecipient;
+    __declspec(property(get=GetOriginalSender,put=PutOriginalSender))
+    _bstr_t OriginalSender;
+    __declspec(property(get=GetOriginalSubject,put=PutOriginalSubject))
+    _bstr_t OriginalSubject;
+    __declspec(property(get=GetReportMTA,put=PutReportMTA))
+    _bstr_t ReportMTA;
+    __declspec(property(get=GetReportType,put=PutReportType))
+    long ReportType;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetErrCode ( );
+    void PutErrCode (
+        _bstr_t pVal );
+    _bstr_t GetErrDescription ( );
+    void PutErrDescription (
+        _bstr_t pVal );
+    IHeaderCollectionPtr GetOriginalHeaders ( );
+    void PutOriginalHeaders (
+        struct IHeaderCollection * pVal );
+    _bstr_t GetOriginalMessageID ( );
+    void PutOriginalMessageID (
+        _bstr_t pVal );
+    _bstr_t GetOriginalRecipient ( );
+    void PutOriginalRecipient (
+        _bstr_t pVal );
+    _bstr_t GetOriginalSender ( );
+    void PutOriginalSender (
+        _bstr_t pVal );
+    _bstr_t GetOriginalSubject ( );
+    void PutOriginalSubject (
+        _bstr_t pVal );
+    _bstr_t GetReportMTA ( );
+    void PutReportMTA (
+        _bstr_t pVal );
+    long GetReportType ( );
+    void PutReportType (
+        long pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ErrCode (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ErrCode (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ErrDescription (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ErrDescription (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_OriginalHeaders (
+        /*[out,retval]*/ struct IHeaderCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall put_OriginalHeaders (
+        /*[in]*/ struct IHeaderCollection * pVal ) = 0;
+      virtual HRESULT __stdcall get_OriginalMessageID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_OriginalMessageID (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_OriginalRecipient (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_OriginalRecipient (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_OriginalSender (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_OriginalSender (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_OriginalSubject (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_OriginalSubject (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ReportMTA (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ReportMTA (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ReportType (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_ReportType (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("d531d50d-cdc6-400a-b938-46d36382173e"))
+IAttachment : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetHeaders))
+    IHeaderCollectionPtr Headers;
+    __declspec(property(get=GetCharset))
+    _bstr_t Charset;
+    __declspec(property(get=GetContent))
+    _variant_t Content;
+    __declspec(property(get=GetContentID))
+    _bstr_t ContentID;
+    __declspec(property(get=GetContentType))
+    _bstr_t ContentType;
+    __declspec(property(get=GetEncodedContent))
+    _variant_t EncodedContent;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetStartIndex))
+    long StartIndex;
+    __declspec(property(get=GetEncodedContentLen))
+    long EncodedContentLen;
+    __declspec(property(get=GetRemoveDoubleDot,put=PutRemoveDoubleDot))
+    VARIANT_BOOL RemoveDoubleDot;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IHeaderCollectionPtr GetHeaders ( );
+    HRESULT SaveAs (
+        _bstr_t FileName,
+        VARIANT_BOOL Overwrite );
+    _bstr_t GetCharset ( );
+    _variant_t GetContent ( );
+    _bstr_t GetContentID ( );
+    _bstr_t GetContentType ( );
+    _variant_t GetEncodedContent ( );
+    _bstr_t GetName ( );
+    HRESULT Init (
+        const _variant_t & vt,
+        long CodePage,
+        long Start,
+        long Index );
+    long GetStartIndex ( );
+    long GetEncodedContentLen ( );
+    VARIANT_BOOL GetRemoveDoubleDot ( );
+    void PutRemoveDoubleDot (
+        VARIANT_BOOL pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Headers (
+        /*[out,retval]*/ struct IHeaderCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SaveAs (
+        /*[in]*/ BSTR FileName,
+        /*[in]*/ VARIANT_BOOL Overwrite ) = 0;
+      virtual HRESULT __stdcall get_Charset (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Content (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_ContentID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ContentType (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_EncodedContent (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Init (
+        /*[in]*/ VARIANT vt,
+        /*[in]*/ long CodePage,
+        /*[in]*/ long Start,
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall get_StartIndex (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_EncodedContentLen (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_RemoveDoubleDot (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_RemoveDoubleDot (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("9e7048e1-3574-4efa-ae7b-67a015ba470f"))
+IMailAddress : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetAddress,put=PutAddress))
+    _bstr_t Address;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    _bstr_t GetAddress ( );
+    void PutAddress (
+        _bstr_t pVal );
+    _bstr_t EncodeAddr (
+        _bstr_t Charset );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Address (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Address (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_EncodeAddr (
+        /*[in]*/ BSTR Charset,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("bdf40f78-205a-4651-b0c6-4b2870485e5d"))
+IAddressCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetLength))
+    long Length;
+    __declspec(property(get=GetItem))
+    IMailAddressPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    long GetLength ( );
+    IMailAddressPtr GetItem (
+        long Index );
+    HRESULT Add (
+        struct IMailAddress * Address );
+    HRESULT Insert (
+        long Index,
+        struct IMailAddress * Address );
+    HRESULT Clear ( );
+    HRESULT Remove (
+        struct IMailAddress * Address );
+    HRESULT RemoveAt (
+        long Index );
+    IMailAddressPtr IndexOf (
+        long Index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IMailAddress * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct IMailAddress * Address ) = 0;
+      virtual HRESULT __stdcall raw_Insert (
+        /*[in]*/ long Index,
+        /*[in]*/ struct IMailAddress * Address ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ struct IMailAddress * Address ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAt (
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall raw_IndexOf (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IMailAddress * * pVal ) = 0;
+};
+
+struct __declspec(uuid("380c4c5a-c4af-4314-9b5f-53ec125de749"))
+IAttachmentCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetLength))
+    long Length;
+    __declspec(property(get=GetItem))
+    IAttachmentPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    long GetLength ( );
+    IAttachmentPtr GetItem (
+        long Index );
+    IAttachmentPtr IndexOf (
+        long Index );
+    HRESULT Add (
+        struct IAttachment * Attachment );
+    HRESULT Insert (
+        long Index,
+        struct IAttachment * Attachment );
+    HRESULT Clear ( );
+    HRESULT Remove (
+        struct IAttachment * Attachment );
+    HRESULT RemoveAt (
+        long Index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IAttachment * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_IndexOf (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IAttachment * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct IAttachment * Attachment ) = 0;
+      virtual HRESULT __stdcall raw_Insert (
+        /*[in]*/ long Index,
+        /*[in]*/ struct IAttachment * Attachment ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ struct IAttachment * Attachment ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAt (
+        /*[in]*/ long Index ) = 0;
+};
+
+struct __declspec(uuid("2f71e6cf-9417-46eb-b7c8-1760fdac17c6"))
+IMail : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetContent))
+    _variant_t Content;
+    __declspec(property(get=GetAttachments))
+    _variant_t Attachments;
+    __declspec(property(get=GetBodyHeaders))
+    IHeaderCollectionPtr BodyHeaders;
+    __declspec(property(get=GetCc))
+    _variant_t Cc;
+    __declspec(property(get=GetFrom))
+    IMailAddressPtr From;
+    __declspec(property(get=GetHeaders))
+    IHeaderCollectionPtr Headers;
+    __declspec(property(get=GetHtmlBody))
+    _bstr_t HtmlBody;
+    __declspec(property(get=GetIsEncrypted))
+    VARIANT_BOOL IsEncrypted;
+    __declspec(property(get=GetIsReport))
+    VARIANT_BOOL IsReport;
+    __declspec(property(get=GetIsSigned))
+    VARIANT_BOOL IsSigned;
+    __declspec(property(get=GetOriginalBodyFormat))
+    long OriginalBodyFormat;
+    __declspec(property(get=GetPriority))
+    long Priority;
+    __declspec(property(get=GetReceivedDate))
+    DATE ReceivedDate;
+    __declspec(property(get=GetReplyTo))
+    IMailAddressPtr ReplyTo;
+    __declspec(property(get=GetSentDate))
+    DATE SentDate;
+    __declspec(property(get=GetSubject))
+    _bstr_t Subject;
+    __declspec(property(get=GetTag,put=PutTag))
+    _variant_t Tag;
+    __declspec(property(get=GetTextBody))
+    _bstr_t TextBody;
+    __declspec(property(get=GetTo))
+    _variant_t To;
+    __declspec(property(get=GetBcc))
+    _variant_t Bcc;
+    __declspec(property(get=GetLicenseCode,put=PutLicenseCode))
+    _bstr_t LicenseCode;
+    __declspec(property(get=GetToAddr))
+    _variant_t ToAddr;
+    __declspec(property(get=GetRemoveDoubleDot,put=PutRemoveDoubleDot))
+    VARIANT_BOOL RemoveDoubleDot;
+    __declspec(property(get=GetVersion))
+    _bstr_t Version;
+    __declspec(property(get=GetHasAlternativeBody))
+    VARIANT_BOOL HasAlternativeBody;
+    __declspec(property(get=GetToList))
+    IAddressCollectionPtr ToList;
+    __declspec(property(get=GetCcList))
+    IAddressCollectionPtr CcList;
+    __declspec(property(get=GetBccList))
+    IAddressCollectionPtr BccList;
+    __declspec(property(get=GetAttachmentList))
+    IAttachmentCollectionPtr AttachmentList;
+    __declspec(property(get=GetIsDetectHtmlCharset,put=PutIsDetectHtmlCharset))
+    VARIANT_BOOL IsDetectHtmlCharset;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Load (
+        const _variant_t & data );
+    _variant_t GetContent ( );
+    HRESULT SaveAs (
+        _bstr_t FileName,
+        VARIANT_BOOL Overwrite );
+    HRESULT Clear ( );
+    IMailPtr Decrypt (
+        struct ICertificate * Cert );
+    IMailReportPtr GetReport ( );
+    HRESULT LoadFile (
+        _bstr_t FileName,
+        VARIANT_BOOL LateLoadBody );
+    _variant_t ParseTNEF (
+        const _variant_t & data,
+        VARIANT_BOOL IncludeRTFBody );
+    HRESULT RemoveAttachment (
+        struct IAttachment * Att );
+    ICertificatePtr VerifySignature ( );
+    _variant_t GetAttachments ( );
+    IHeaderCollectionPtr GetBodyHeaders ( );
+    _variant_t GetCc ( );
+    IMailAddressPtr GetFrom ( );
+    IHeaderCollectionPtr GetHeaders ( );
+    _bstr_t GetHtmlBody ( );
+    VARIANT_BOOL GetIsEncrypted ( );
+    VARIANT_BOOL GetIsReport ( );
+    VARIANT_BOOL GetIsSigned ( );
+    long GetOriginalBodyFormat ( );
+    long GetPriority ( );
+    DATE GetReceivedDate ( );
+    IMailAddressPtr GetReplyTo ( );
+    DATE GetSentDate ( );
+    _bstr_t GetSubject ( );
+    _variant_t GetTag ( );
+    void PutTag (
+        const _variant_t & pVal );
+    _bstr_t GetTextBody ( );
+    _variant_t GetTo ( );
+    _variant_t GetBcc ( );
+    _bstr_t GetLicenseCode ( );
+    void PutLicenseCode (
+        _bstr_t pVal );
+    HRESULT UpdateHeader ( );
+    _variant_t GetToAddr ( );
+    VARIANT_BOOL GetRemoveDoubleDot ( );
+    void PutRemoveDoubleDot (
+        VARIANT_BOOL pVal );
+    _bstr_t Html2Text (
+        _bstr_t Html );
+    _bstr_t GetVersion ( );
+    _bstr_t RTFToHTML (
+        const _variant_t & RTFData );
+    HRESULT DecodeTNEF ( );
+    HRESULT LoadOMSG (
+        const _variant_t & MsgData );
+    IMailPtr TNEFToMail (
+        const _variant_t & TNEFData );
+    HRESULT LoadOMSGFile (
+        _bstr_t FileName );
+    HRESULT DecodeTNEFEx ( );
+    VARIANT_BOOL GetHasAlternativeBody ( );
+    HRESULT SaveAsOMSG (
+        _bstr_t FileName,
+        VARIANT_BOOL Overwrite,
+        VARIANT_BOOL Unsent );
+    IAddressCollectionPtr GetToList ( );
+    IAddressCollectionPtr GetCcList ( );
+    IAddressCollectionPtr GetBccList ( );
+    IAttachmentCollectionPtr GetAttachmentList ( );
+    VARIANT_BOOL GetIsDetectHtmlCharset ( );
+    void PutIsDetectHtmlCharset (
+        VARIANT_BOOL pVal );
+    HRESULT Update ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Load (
+        /*[in]*/ VARIANT data ) = 0;
+      virtual HRESULT __stdcall get_Content (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SaveAs (
+        /*[in]*/ BSTR FileName,
+        /*[in]*/ VARIANT_BOOL Overwrite ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_Decrypt (
+        /*[in]*/ struct ICertificate * Cert,
+        /*[out,retval]*/ struct IMail * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetReport (
+        /*[out,retval]*/ struct IMailReport * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_LoadFile (
+        /*[in]*/ BSTR FileName,
+        /*[in]*/ VARIANT_BOOL LateLoadBody ) = 0;
+      virtual HRESULT __stdcall raw_ParseTNEF (
+        /*[in]*/ VARIANT data,
+        /*[in]*/ VARIANT_BOOL IncludeRTFBody,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAttachment (
+        /*[in]*/ struct IAttachment * Att ) = 0;
+      virtual HRESULT __stdcall raw_VerifySignature (
+        /*[out,retval]*/ struct ICertificate * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Attachments (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_BodyHeaders (
+        /*[out,retval]*/ struct IHeaderCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Cc (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_From (
+        /*[out,retval]*/ struct IMailAddress * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Headers (
+        /*[out,retval]*/ struct IHeaderCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_HtmlBody (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_IsEncrypted (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_IsReport (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_IsSigned (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_OriginalBodyFormat (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Priority (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ReceivedDate (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall get_ReplyTo (
+        /*[out,retval]*/ struct IMailAddress * * pVal ) = 0;
+      virtual HRESULT __stdcall get_SentDate (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall get_Subject (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Tag (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Tag (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_TextBody (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_To (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Bcc (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_LicenseCode (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LicenseCode (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_UpdateHeader ( ) = 0;
+      virtual HRESULT __stdcall get_ToAddr (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_RemoveDoubleDot (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_RemoveDoubleDot (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_Html2Text (
+        /*[in]*/ BSTR Html,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_RTFToHTML (
+        /*[in]*/ VARIANT RTFData,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_DecodeTNEF ( ) = 0;
+      virtual HRESULT __stdcall raw_LoadOMSG (
+        /*[in]*/ VARIANT MsgData ) = 0;
+      virtual HRESULT __stdcall raw_TNEFToMail (
+        /*[in]*/ VARIANT TNEFData,
+        /*[out,retval]*/ struct IMail * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_LoadOMSGFile (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall raw_DecodeTNEFEx ( ) = 0;
+      virtual HRESULT __stdcall get_HasAlternativeBody (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SaveAsOMSG (
+        /*[in]*/ BSTR FileName,
+        /*[in]*/ VARIANT_BOOL Overwrite,
+        /*[in]*/ VARIANT_BOOL Unsent ) = 0;
+      virtual HRESULT __stdcall get_ToList (
+        /*[out,retval]*/ struct IAddressCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_CcList (
+        /*[out,retval]*/ struct IAddressCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_BccList (
+        /*[out,retval]*/ struct IAddressCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_AttachmentList (
+        /*[out,retval]*/ struct IAttachmentCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_IsDetectHtmlCharset (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_IsDetectHtmlCharset (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_Update ( ) = 0;
+};
+
+struct __declspec(uuid("e9777121-432a-41a1-a895-be0bbbdd1969"))
+IGetMailInfosParamType : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetGetMailInfosOptions,put=PutGetMailInfosOptions))
+    long GetMailInfosOptions;
+    __declspec(property(get=GetSeqRange,put=PutSeqRange))
+    _bstr_t SeqRange;
+    __declspec(property(get=GetUIDRange,put=PutUIDRange))
+    _bstr_t UIDRange;
+    __declspec(property(get=GetSubjectContains,put=PutSubjectContains))
+    _bstr_t SubjectContains;
+    __declspec(property(get=GetSenderContains,put=PutSenderContains))
+    _bstr_t SenderContains;
+    __declspec(property(get=GetValueChanged,put=PutValueChanged))
+    VARIANT_BOOL ValueChanged;
+    __declspec(property(get=GetDateRangeSINCE,put=PutDateRangeSINCE))
+    DATE DateRangeSINCE;
+    __declspec(property(get=GetDateRangeBEFORE,put=PutDateRangeBEFORE))
+    DATE DateRangeBEFORE;
+    __declspec(property(get=GetToContains,put=PutToContains))
+    _bstr_t ToContains;
+    __declspec(property(get=GetCcContains,put=PutCcContains))
+    _bstr_t CcContains;
+    __declspec(property(get=GetToOrCcContains,put=PutToOrCcContains))
+    _bstr_t ToOrCcContains;
+    __declspec(property(get=GetBodyContains,put=PutBodyContains))
+    _bstr_t BodyContains;
+    __declspec(property(get=GetSubjectOrBodyContains,put=PutSubjectOrBodyContains))
+    _bstr_t SubjectOrBodyContains;
+    __declspec(property(get=GetHeaderContains,put=PutHeaderContains))
+    _bstr_t HeaderContains;
+    __declspec(property(get=GetCategoryFilter,put=PutCategoryFilter))
+    _bstr_t CategoryFilter;
+    __declspec(property(get=GetFollowUpFlag,put=PutFollowUpFlag))
+    _bstr_t FollowUpFlag;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetGetMailInfosOptions ( );
+    void PutGetMailInfosOptions (
+        long pVal );
+    _bstr_t GetSeqRange ( );
+    void PutSeqRange (
+        _bstr_t pVal );
+    _bstr_t GetUIDRange ( );
+    void PutUIDRange (
+        _bstr_t pVal );
+    _bstr_t GetSubjectContains ( );
+    void PutSubjectContains (
+        _bstr_t pVal );
+    _bstr_t GetSenderContains ( );
+    void PutSenderContains (
+        _bstr_t pVal );
+    VARIANT_BOOL GetValueChanged ( );
+    void PutValueChanged (
+        VARIANT_BOOL pVal );
+    DATE GetDateRangeSINCE ( );
+    void PutDateRangeSINCE (
+        DATE pVal );
+    DATE GetDateRangeBEFORE ( );
+    void PutDateRangeBEFORE (
+        DATE pVal );
+    HRESULT Reset ( );
+    _bstr_t GetToContains ( );
+    void PutToContains (
+        _bstr_t pVal );
+    _bstr_t GetCcContains ( );
+    void PutCcContains (
+        _bstr_t pVal );
+    _bstr_t GetToOrCcContains ( );
+    void PutToOrCcContains (
+        _bstr_t pVal );
+    _bstr_t GetBodyContains ( );
+    void PutBodyContains (
+        _bstr_t pVal );
+    _bstr_t GetSubjectOrBodyContains ( );
+    void PutSubjectOrBodyContains (
+        _bstr_t pVal );
+    _bstr_t GetHeaderContains ( );
+    void PutHeaderContains (
+        _bstr_t pVal );
+    _bstr_t GetCategoryFilter ( );
+    void PutCategoryFilter (
+        _bstr_t pVal );
+    _bstr_t GetFollowUpFlag ( );
+    void PutFollowUpFlag (
+        _bstr_t pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_GetMailInfosOptions (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_GetMailInfosOptions (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_SeqRange (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SeqRange (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_UIDRange (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_UIDRange (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SubjectContains (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SubjectContains (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SenderContains (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SenderContains (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ValueChanged (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_ValueChanged (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_DateRangeSINCE (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_DateRangeSINCE (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_DateRangeBEFORE (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_DateRangeBEFORE (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall raw_Reset ( ) = 0;
+      virtual HRESULT __stdcall get_ToContains (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ToContains (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CcContains (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CcContains (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ToOrCcContains (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ToOrCcContains (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_BodyContains (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BodyContains (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SubjectOrBodyContains (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_SubjectOrBodyContains (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_HeaderContains (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_HeaderContains (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CategoryFilter (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CategoryFilter (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_FollowUpFlag (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FollowUpFlag (
+        /*[in]*/ BSTR pVal ) = 0;
+};
+
+struct __declspec(uuid("861d4252-62f3-4ecd-8f48-bd1c1f703cd1"))
+IMailInfoCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetLength))
+    long Length;
+    __declspec(property(get=GetItem))
+    IMailInfoPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    long GetLength ( );
+    HRESULT Add (
+        struct IMailInfo * Info );
+    HRESULT Insert (
+        long Index,
+        struct IMailInfo * Info );
+    HRESULT Clear ( );
+    HRESULT Remove (
+        struct IMailInfo * Info );
+    HRESULT RemoveAt (
+        long Index );
+    IMailInfoPtr IndexOf (
+        long Index );
+    IMailInfoPtr GetItem (
+        long Index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct IMailInfo * Info ) = 0;
+      virtual HRESULT __stdcall raw_Insert (
+        /*[in]*/ long Index,
+        /*[in]*/ struct IMailInfo * Info ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ struct IMailInfo * Info ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAt (
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall raw_IndexOf (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IMailInfo * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IMailInfo * * pVal ) = 0;
+};
+
+struct __declspec(uuid("6aa9c7ee-bbd2-4941-a348-9e9c343366d2"))
+ITools : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t VarToBSTR (
+        const _variant_t & Var,
+        long CodePage );
+    HRESULT CreateFolder (
+        _bstr_t FolderName );
+    VARIANT_BOOL ExistFile (
+        _bstr_t FileOrFolderName );
+    HRESULT RemoveFile (
+        _bstr_t FileName );
+    HRESULT RemoveFolder (
+        _bstr_t FolderName,
+        VARIANT_BOOL Recursive );
+    _variant_t GetFiles (
+        _bstr_t FolderName );
+    _bstr_t ReadTextFile (
+        _bstr_t FileName,
+        long CodePage );
+    HRESULT WriteTextFile (
+        _bstr_t FileName,
+        _bstr_t Content,
+        long CodePage );
+    _bstr_t GenFileName (
+        long Index );
+    _variant_t BSTRToVar (
+        _bstr_t Src,
+        long CodePage );
+    _bstr_t ReadFileToBase64 (
+        _bstr_t FileName );
+    _variant_t ReadBinaryFile (
+        _bstr_t FileName );
+    HRESULT RenameFile (
+        _bstr_t FileName,
+        _bstr_t NewName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_VarToBSTR (
+        /*[in]*/ VARIANT Var,
+        /*[in]*/ long CodePage,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_CreateFolder (
+        /*[in]*/ BSTR FolderName ) = 0;
+      virtual HRESULT __stdcall raw_ExistFile (
+        /*[in]*/ BSTR FileOrFolderName,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_RemoveFile (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall raw_RemoveFolder (
+        /*[in]*/ BSTR FolderName,
+        /*[in]*/ VARIANT_BOOL Recursive ) = 0;
+      virtual HRESULT __stdcall raw_GetFiles (
+        /*[in]*/ BSTR FolderName,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_ReadTextFile (
+        /*[in]*/ BSTR FileName,
+        /*[in]*/ long CodePage,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_WriteTextFile (
+        /*[in]*/ BSTR FileName,
+        /*[in]*/ BSTR Content,
+        /*[in]*/ long CodePage ) = 0;
+      virtual HRESULT __stdcall raw_GenFileName (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_BSTRToVar (
+        /*[in]*/ BSTR Src,
+        /*[in]*/ long CodePage,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_ReadFileToBase64 (
+        /*[in]*/ BSTR FileName,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_ReadBinaryFile (
+        /*[in]*/ BSTR FileName,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_RenameFile (
+        /*[in]*/ BSTR FileName,
+        /*[in]*/ BSTR NewName ) = 0;
+};
+
+struct __declspec(uuid("2bb66cc9-2e20-4567-97c0-494109f5b12b"))
+IUIDLItem : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetUIDL,put=PutUIDL))
+    _bstr_t UIDL;
+    __declspec(property(get=GetServerUser,put=PutServerUser))
+    _bstr_t ServerUser;
+    __declspec(property(get=GetFileName,put=PutFileName))
+    _bstr_t FileName;
+    __declspec(property(get=GetDownloadTime,put=PutDownloadTime))
+    DATE DownloadTime;
+    __declspec(property(get=GetFlags,put=PutFlags))
+    long Flags;
+    __declspec(property(get=GetIndex,put=PutIndex))
+    long Index;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetUIDL ( );
+    void PutUIDL (
+        _bstr_t pVal );
+    _bstr_t GetServerUser ( );
+    void PutServerUser (
+        _bstr_t pVal );
+    _bstr_t GetFileName ( );
+    void PutFileName (
+        _bstr_t pVal );
+    DATE GetDownloadTime ( );
+    void PutDownloadTime (
+        DATE pVal );
+    long GetFlags ( );
+    void PutFlags (
+        long pVal );
+    long GetIndex ( );
+    void PutIndex (
+        long pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_UIDL (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_UIDL (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ServerUser (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ServerUser (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_FileName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FileName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DownloadTime (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_DownloadTime (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_Flags (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Flags (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Index (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Index (
+        /*[in]*/ long pVal ) = 0;
+};
+
+struct __declspec(uuid("63d8237a-5dc3-4c82-be6b-073b32a78759"))
+IUIDLManager : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Load (
+        _bstr_t FileName );
+    HRESULT Update ( );
+    HRESULT SyncUIDL (
+        struct IMailServer * oServer,
+        const _variant_t & Infos );
+    IUIDLItemPtr AddUIDL (
+        struct IMailServer * oServer,
+        _bstr_t UIDL,
+        _bstr_t LocalFileName );
+    HRESULT RemoveUIDL (
+        struct IMailServer * oServer,
+        _bstr_t UIDL );
+    HRESULT RemoveUIDLEX (
+        struct IUIDLItem * oItem );
+    HRESULT RemoveAt (
+        long Index );
+    HRESULT Clear ( );
+    long GetCount ( );
+    IUIDLItemPtr Item (
+        long Index );
+    IUIDLItemPtr FindUIDL (
+        struct IMailServer * oServer,
+        _bstr_t UIDL );
+    IUIDLItemPtr FindLocalFile (
+        _bstr_t FileName );
+    HRESULT SyncUIDLEX (
+        struct IMailServer * oServer,
+        struct IMailInfoCollection * Infos );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Load (
+        /*[in]*/ BSTR FileName ) = 0;
+      virtual HRESULT __stdcall raw_Update ( ) = 0;
+      virtual HRESULT __stdcall raw_SyncUIDL (
+        /*[in]*/ struct IMailServer * oServer,
+        /*[in]*/ VARIANT Infos ) = 0;
+      virtual HRESULT __stdcall raw_AddUIDL (
+        /*[in]*/ struct IMailServer * oServer,
+        /*[in]*/ BSTR UIDL,
+        /*[in]*/ BSTR LocalFileName,
+        /*[out,retval]*/ struct IUIDLItem * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_RemoveUIDL (
+        /*[in]*/ struct IMailServer * oServer,
+        /*[in]*/ BSTR UIDL ) = 0;
+      virtual HRESULT __stdcall raw_RemoveUIDLEX (
+        /*[in]*/ struct IUIDLItem * oItem ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAt (
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IUIDLItem * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_FindUIDL (
+        /*[in]*/ struct IMailServer * oServer,
+        /*[in]*/ BSTR UIDL,
+        /*[out,retval]*/ struct IUIDLItem * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_FindLocalFile (
+        /*[in]*/ BSTR FileName,
+        /*[out,retval]*/ struct IUIDLItem * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SyncUIDLEX (
+        /*[in]*/ struct IMailServer * oServer,
+        /*[in]*/ struct IMailInfoCollection * Infos ) = 0;
+};
+
+struct __declspec(uuid("40936428-092e-4974-8315-0163b6d33e94"))
+ISimpleJsonArray : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLength))
+    long Length;
+    __declspec(property(get=GetCount))
+    long Count;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetLength ( );
+    long GetCount ( );
+    HRESULT Add (
+        _bstr_t newVal );
+    HRESULT RemoveAt (
+        long Index );
+    HRESULT Clear ( );
+    _bstr_t Item (
+        long Index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ BSTR newVal ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAt (
+        /*[in]*/ long Index ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("9c825340-7b0a-432c-b082-deeb8b2a3e64"))
+ISimpleJsonParser : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetJsonValue (
+        _bstr_t Source,
+        _bstr_t Key );
+    ISimpleJsonArrayPtr ParseArray (
+        _bstr_t Source );
+    _bstr_t Trim (
+        _bstr_t Source,
+        _bstr_t Trimer );
+    _bstr_t GetStringValue (
+        _bstr_t Source,
+        _bstr_t Key );
+    long GetIntValue (
+        _bstr_t Source,
+        _bstr_t Key );
+    VARIANT_BOOL GetBoolValue (
+        _bstr_t Source,
+        _bstr_t Key );
+    _bstr_t JwtBase64UrlEncode (
+        _bstr_t Input );
+    _bstr_t JwtBase64UrlDecode (
+        _bstr_t Input );
+    _bstr_t SignRs256 (
+        struct ICertificate * PfxCertificate,
+        _bstr_t Payload );
+    _bstr_t SignRs256WithPrivateKey (
+        _bstr_t RsaPrivateKey,
+        _bstr_t Payload );
+    long GetCurrentIAT ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetJsonValue (
+        /*[in]*/ BSTR Source,
+        /*[in]*/ BSTR Key,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_ParseArray (
+        /*[in]*/ BSTR Source,
+        /*[out,retval]*/ struct ISimpleJsonArray * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Trim (
+        /*[in]*/ BSTR Source,
+        /*[in]*/ BSTR Trimer,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetStringValue (
+        /*[in]*/ BSTR Source,
+        /*[in]*/ BSTR Key,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetIntValue (
+        /*[in]*/ BSTR Source,
+        /*[in]*/ BSTR Key,
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetBoolValue (
+        /*[in]*/ BSTR Source,
+        /*[in]*/ BSTR Key,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_JwtBase64UrlEncode (
+        /*[in]*/ BSTR Input,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_JwtBase64UrlDecode (
+        /*[in]*/ BSTR Input,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SignRs256 (
+        /*[in]*/ struct ICertificate * PfxCertificate,
+        /*[in]*/ BSTR Payload,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SignRs256WithPrivateKey (
+        /*[in]*/ BSTR RsaPrivateKey,
+        /*[in]*/ BSTR Payload,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetCurrentIAT (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("097f935e-a866-40d1-84fe-e453727f53f0"))
+IHttpListener : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetRequestUrl))
+    _bstr_t RequestUrl;
+    __declspec(property(get=GetListenPort))
+    long ListenPort;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL Create (
+        _bstr_t IPv4Address,
+        long Port );
+    VARIANT_BOOL GetRequestUrl (
+        long Timeout );
+    VARIANT_BOOL SendResponse (
+        _bstr_t ResponseCode,
+        _bstr_t ContentType,
+        _bstr_t Content );
+    HRESULT Close ( );
+    _bstr_t GetRequestUrl ( );
+    long GetListenPort ( );
+    _bstr_t GetLastError ( );
+    HRESULT ClearUrl ( );
+    VARIANT_BOOL BeginGetRequestUrl ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Create (
+        /*[in]*/ BSTR IPv4Address,
+        /*[in]*/ long Port,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetRequestUrl (
+        /*[in]*/ long Timeout,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SendResponse (
+        /*[in]*/ BSTR ResponseCode,
+        /*[in]*/ BSTR ContentType,
+        /*[in]*/ BSTR Content,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Close ( ) = 0;
+      virtual HRESULT __stdcall get_RequestUrl (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_ListenPort (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetLastError (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_ClearUrl ( ) = 0;
+      virtual HRESULT __stdcall raw_BeginGetRequestUrl (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+};
+
+struct __declspec(uuid("3e500587-4a39-4cd9-be41-5cdd0d0a26c3"))
+IBrowserUi : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL OpenUrl (
+        _bstr_t Url );
+    VARIANT_BOOL OpenIEObject (
+        _bstr_t Url,
+        long Left,
+        long Top,
+        long Height,
+        long Width );
+    _bstr_t GetLastError ( );
+    VARIANT_BOOL OpenIE (
+        _bstr_t Url,
+        VARIANT_BOOL IsPrivate );
+    _bstr_t GetIEVersion ( );
+    HRESULT ClosePrivateIE ( );
+    VARIANT_BOOL IsPrivateIEClosed ( );
+    HRESULT CloseBrowserByTitle (
+        _bstr_t Title );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_OpenUrl (
+        /*[in]*/ BSTR Url,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_OpenIEObject (
+        /*[in]*/ BSTR Url,
+        /*[in]*/ long Left,
+        /*[in]*/ long Top,
+        /*[in]*/ long Height,
+        /*[in]*/ long Width,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetLastError (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_OpenIE (
+        /*[in]*/ BSTR Url,
+        /*[in]*/ VARIANT_BOOL IsPrivate,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetIEVersion (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_ClosePrivateIE ( ) = 0;
+      virtual HRESULT __stdcall raw_IsPrivateIEClosed (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_CloseBrowserByTitle (
+        /*[in]*/ BSTR Title ) = 0;
+};
+
+struct __declspec(uuid("f9c5042f-13e4-42b7-8160-f511c74a9904"))
+_IMailClientEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnIdle (
+        IDispatch * oSender,
+        VARIANT_BOOL * Cancel );
+    HRESULT OnConnected (
+        IDispatch * oSender,
+        VARIANT_BOOL * Cancel );
+    HRESULT OnQuit (
+        IDispatch * oSender,
+        VARIANT_BOOL * Cancel );
+    HRESULT OnSendCommand (
+        IDispatch * oSender,
+        const _variant_t & data,
+        VARIANT_BOOL IsDataStream,
+        VARIANT_BOOL * Cancel );
+    HRESULT OnReceiveResponse (
+        IDispatch * oSender,
+        const _variant_t & data,
+        VARIANT_BOOL IsDataStream,
+        VARIANT_BOOL * Cancel );
+    HRESULT OnSecuring (
+        IDispatch * oSender,
+        VARIANT_BOOL * Cancel );
+    HRESULT OnAuthorized (
+        IDispatch * oSender,
+        VARIANT_BOOL * Cancel );
+    HRESULT OnSendingDataStream (
+        IDispatch * oSender,
+        long Sent,
+        long Total,
+        VARIANT_BOOL * Cancel );
+    HRESULT OnReceivingDataStream (
+        IDispatch * oSender,
+        IDispatch * oInfo,
+        long Received,
+        long Total,
+        VARIANT_BOOL * Cancel );
+};
+
+struct __declspec(uuid("953efd7c-8fce-4d9c-9bd9-e6f19a1b7fc9"))
+MailClient;
+    // [ default ] interface IMailClient
+    // [ default, source ] dispinterface _IMailClientEvents
+
+struct __declspec(uuid("ad59203b-0c25-4192-98f2-c680d6a16738"))
+Attachment;
+    // [ default ] interface IAttachment
+
+struct __declspec(uuid("76bb6aa2-49d5-4452-97a0-c5f7b8910d12"))
+Certificate;
+    // [ default ] interface ICertificate
+
+struct __declspec(uuid("3f46ebc3-9d7f-4f73-b779-f2fc6c0b6ee7"))
+HeaderCollection;
+    // [ default ] interface IHeaderCollection
+
+struct __declspec(uuid("206af1cc-df89-4e4e-96eb-40d7641facfd"))
+HeaderItem;
+    // [ default ] interface IHeaderItem
+
+struct __declspec(uuid("c06966a4-9f1d-497f-84b9-9204f31994a3"))
+Imap4Folder;
+    // [ default ] interface IImap4Folder
+
+struct __declspec(uuid("ae30137e-07c8-403f-8772-07af79c1dd2e"))
+Mail;
+    // [ default ] interface IMail
+
+struct __declspec(uuid("d6da04b9-6d72-424a-9582-9752409aad9c"))
+MailAddress;
+    // [ default ] interface IMailAddress
+
+struct __declspec(uuid("cfed4866-f709-481f-89c1-4d1bf0f830d3"))
+MailInfo;
+    // [ default ] interface IMailInfo
+
+struct __declspec(uuid("65acb9b1-68e6-460b-9738-720e0e3a6dd3"))
+MailServer;
+    // [ default ] interface IMailServer
+
+struct __declspec(uuid("029033b3-0cff-452e-8832-8101fde8d0b4"))
+MailReport;
+    // [ default ] interface IMailReport
+
+struct __declspec(uuid("8b092b61-ae66-4413-b4d0-6b97fbe6da08"))
+Tools;
+    // [ default ] interface ITools
+
+struct __declspec(uuid("440b896b-8aad-4fee-8f39-066f79f73e5c"))
+UIDLManager;
+    // [ default ] interface IUIDLManager
+
+struct __declspec(uuid("7096722c-e10d-42d9-a284-1e582d2b27b3"))
+UIDLItem;
+    // [ default ] interface IUIDLItem
+
+struct __declspec(uuid("b511d930-097e-4e90-9753-956a067d9e0e"))
+GetMailInfosParamType;
+    // [ default ] interface IGetMailInfosParamType
+
+struct __declspec(uuid("624d5c57-88a2-4f35-9f3a-5d7cfb18d048"))
+AddressCollection;
+    // [ default ] interface IAddressCollection
+
+struct __declspec(uuid("149a39c9-6c10-49d7-8b8a-d46f5e529315"))
+AttachmentCollection;
+    // [ default ] interface IAttachmentCollection
+
+struct __declspec(uuid("77072ff5-d841-4b03-bfd0-bd0d038e71cb"))
+MailInfoCollection;
+    // [ default ] interface IMailInfoCollection
+
+struct __declspec(uuid("59a2f86b-1007-4262-a8af-d4a912c2a5dd"))
+FolderCollection;
+    // [ default ] interface IFolderCollection
+
+struct __declspec(uuid("05f813df-cae6-43c0-af72-738869697fc0"))
+CategoryCollection;
+    // [ default ] interface ICategoryCollection
+
+struct __declspec(uuid("0565e510-02c1-4a2a-aaf6-42a0aea7c5d0"))
+Category;
+    // [ default ] interface ICategory
+
+struct __declspec(uuid("704c7ce4-c00b-4784-80ea-79f865b3adcc"))
+SimpleJsonArray;
+    // [ default ] interface ISimpleJsonArray
+
+struct __declspec(uuid("a308fa17-b94e-4881-9c1e-e30b936e42c2"))
+SimpleJsonParser;
+    // [ default ] interface ISimpleJsonParser
+
+struct __declspec(uuid("faf4de6f-1303-4851-b659-8f8beb51f1a0"))
+OAuthResponseParser;
+    // [ default ] interface IOAuthResponseParser
+
+struct __declspec(uuid("2cba3e15-44bb-428c-9dd5-68dc02957c37"))
+IOAuthResponseParser : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAccessToken,put=PutAccessToken))
+    _bstr_t AccessToken;
+    __declspec(property(get=GetRefreshToken,put=PutRefreshToken))
+    _bstr_t RefreshToken;
+    __declspec(property(get=GetIdToken))
+    _bstr_t IdToken;
+    __declspec(property(get=GetTokenExpiresInSeconds,put=PutTokenExpiresInSeconds))
+    long TokenExpiresInSeconds;
+    __declspec(property(get=GetEmailInIdToken,put=PutEmailInIdToken))
+    _bstr_t EmailInIdToken;
+    __declspec(property(get=GetAccessTokenTimestamp))
+    DATE AccessTokenTimestamp;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Load (
+        _bstr_t Input );
+    _bstr_t GetAccessToken ( );
+    void PutAccessToken (
+        _bstr_t pVal );
+    _bstr_t GetRefreshToken ( );
+    void PutRefreshToken (
+        _bstr_t pVal );
+    _bstr_t GetIdToken ( );
+    long GetTokenExpiresInSeconds ( );
+    void PutTokenExpiresInSeconds (
+        long pVal );
+    _bstr_t GetEmailInIdToken ( );
+    void PutEmailInIdToken (
+        _bstr_t pVal );
+    DATE GetAccessTokenTimestamp ( );
+    VARIANT_BOOL SaveToFile (
+        _bstr_t tokenFile );
+    VARIANT_BOOL LoadFromFile (
+        _bstr_t tokenFile );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Load (
+        /*[in]*/ BSTR Input ) = 0;
+      virtual HRESULT __stdcall get_AccessToken (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_AccessToken (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RefreshToken (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_RefreshToken (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_IdToken (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_TokenExpiresInSeconds (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_TokenExpiresInSeconds (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_EmailInIdToken (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_EmailInIdToken (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_AccessTokenTimestamp (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SaveToFile (
+        /*[in]*/ BSTR tokenFile,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_LoadFromFile (
+        /*[in]*/ BSTR tokenFile,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+};
+
+struct __declspec(uuid("ebf04f6b-74e2-4705-a75c-1fbe90dc5832"))
+BrowserUi;
+    // [ default ] interface IBrowserUi
+
+struct __declspec(uuid("d6db71a9-c346-4da0-a6cf-9ad59276de37"))
+_ILocalHttpListenerEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnRequest (
+        IDispatch * oSender,
+        _bstr_t Url );
+    HRESULT OnError (
+        IDispatch * oSender,
+        _bstr_t ErrorDescription );
+};
+
+struct __declspec(uuid("dd3f1fac-ac6d-4d6a-8387-e61588a20551"))
+HttpListener;
+    // [ default ] interface IHttpListener
+    // [ default, source ] dispinterface _ILocalHttpListenerEvents
+
+struct __declspec(uuid("f7463672-bda9-428f-8a03-e30c0f1b7ea8"))
+IMailClient : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetTimeout,put=PutTimeout))
+    long Timeout;
+    __declspec(property(get=GetLicenseCode,put=PutLicenseCode))
+    _bstr_t LicenseCode;
+    __declspec(property(get=GetRemoveDoubleDot,put=PutRemoveDoubleDot))
+    VARIANT_BOOL RemoveDoubleDot;
+    __declspec(property(get=GetLastErrorDescription,put=PutLastErrorDescription))
+    _bstr_t LastErrorDescription;
+    __declspec(property(get=GetGetMailInfosParam))
+    IGetMailInfosParamTypePtr GetMailInfosParam;
+    __declspec(property(get=GetDelimiter))
+    _bstr_t Delimiter;
+    __declspec(property(get=GetConnected))
+    VARIANT_BOOL Connected;
+    __declspec(property(get=GetConversation))
+    _bstr_t Conversation;
+    __declspec(property(get=GetCRLFAfterAppendCommand,put=PutCRLFAfterAppendCommand))
+    VARIANT_BOOL CRLFAfterAppendCommand;
+    __declspec(property(get=GetCurrentMailServer))
+    IMailServerPtr CurrentMailServer;
+    __declspec(property(get=GetImap4Folders))
+    _variant_t Imap4Folders;
+    __declspec(property(get=GetLogFileName,put=PutLogFileName))
+    _bstr_t LogFileName;
+    __declspec(property(get=GetPreviousCommand))
+    _bstr_t PreviousCommand;
+    __declspec(property(get=GetSelectedFolder))
+    _bstr_t SelectedFolder;
+    __declspec(property(get=GetTag,put=PutTag))
+    _variant_t Tag;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Append (
+        struct IImap4Folder * oFolder,
+        const _variant_t & data );
+    HRESULT AppendEx (
+        struct IImap4Folder * oFolder,
+        const _variant_t & data,
+        _bstr_t Flags,
+        DATE MailDateTime );
+    HRESULT ChangeMailFlags (
+        struct IMailInfo * oInfo,
+        _bstr_t Flags );
+    HRESULT Close ( );
+    HRESULT Connect (
+        struct IMailServer * oServer );
+    HRESULT Copy (
+        struct IMailInfo * oInfo,
+        struct IImap4Folder * oFolder );
+    IImap4FolderPtr CreateFolder (
+        struct IImap4Folder * RootFolder,
+        _bstr_t FolderName );
+    HRESULT Delete (
+        struct IMailInfo * oInfo );
+    HRESULT DeleteFolder (
+        struct IImap4Folder * oFolder );
+    HRESULT Expunge ( );
+    IMailPtr GetMail (
+        struct IMailInfo * oInfo );
+    _variant_t GetMailHeader (
+        struct IMailInfo * oInfo );
+    _variant_t GetMailInfos ( );
+    HRESULT Logout ( );
+    HRESULT Quit ( );
+    HRESULT ReConnect ( );
+    HRESULT Reset ( );
+    _variant_t SearchMail (
+        _bstr_t Condition );
+    HRESULT SelectFolder (
+        struct IImap4Folder * oFolder );
+    HRESULT SubscribeFolder (
+        struct IImap4Folder * oFolder );
+    HRESULT UnsubscribeFolder (
+        struct IImap4Folder * oFolder );
+    HRESULT WriteLog (
+        _bstr_t v );
+    VARIANT_BOOL GetConnected ( );
+    _bstr_t GetConversation ( );
+    VARIANT_BOOL GetCRLFAfterAppendCommand ( );
+    void PutCRLFAfterAppendCommand (
+        VARIANT_BOOL pVal );
+    IMailServerPtr GetCurrentMailServer ( );
+    _variant_t GetImap4Folders ( );
+    _bstr_t GetLogFileName ( );
+    void PutLogFileName (
+        _bstr_t pVal );
+    _bstr_t GetPreviousCommand ( );
+    _bstr_t GetSelectedFolder ( );
+    _variant_t GetTag ( );
+    void PutTag (
+        const _variant_t & pVal );
+    long GetTimeout ( );
+    void PutTimeout (
+        long pVal );
+    _bstr_t GetLicenseCode ( );
+    void PutLicenseCode (
+        _bstr_t pVal );
+    HRESULT GetMailsByQueue (
+        struct IMailServer * oServer,
+        _bstr_t DownloadFolder,
+        VARIANT_BOOL LeaveCopy );
+    HRESULT RenameFolder (
+        struct IImap4Folder * oFolder,
+        _bstr_t NewName );
+    VARIANT_BOOL GetRemoveDoubleDot ( );
+    void PutRemoveDoubleDot (
+        VARIANT_BOOL pVal );
+    HRESULT MarkAsRead (
+        struct IMailInfo * oInfo,
+        VARIANT_BOOL Read );
+    HRESULT RefreshMailInfos ( );
+    HRESULT RefreshFolders ( );
+    HRESULT Move (
+        struct IMailInfo * oInfo,
+        struct IImap4Folder * oFolder );
+    HRESULT Undelete (
+        struct IMailInfo * oInfo );
+    _variant_t QueryEWSPublicFolders ( );
+    _bstr_t GetLastErrorDescription ( );
+    void PutLastErrorDescription (
+        _bstr_t pVal );
+    HRESULT NOOP ( );
+    VARIANT_BOOL WaitNewEmail (
+        long WaitTimeout );
+    HRESULT CancelWaitEmail ( );
+    IGetMailInfosParamTypePtr GetGetMailInfosParam ( );
+    long GetMailCount ( );
+    _bstr_t GetDelimiter ( );
+    IMailInfoCollectionPtr GetMailInfoList ( );
+    IFolderCollectionPtr GetFolderList ( );
+    IFolderCollectionPtr GetEWSPublicFolderList ( );
+    ICategoryCollectionPtr GetEWSCategories (
+        struct IMailInfo * oInfo );
+    HRESULT UpdateEWSCategories (
+        struct IMailInfo * oInfo,
+        struct ICategoryCollection * oCategories );
+    _variant_t FetchMails (
+        VARIANT_BOOL HeaderOnly );
+    IMailInfoCollectionPtr SearchMailList (
+        _bstr_t Condition );
+    _bstr_t EncodeImap4FolderName (
+        _bstr_t FolderName );
+    _bstr_t DecodeImap4FolderName (
+        _bstr_t FolderName );
+    ICategoryCollectionPtr GetCategories (
+        struct IMailInfo * oInfo );
+    HRESULT SetCategories (
+        struct IMailInfo * oInfo,
+        struct ICategoryCollection * oCategories );
+    _bstr_t GetFollowUpFlag (
+        struct IMailInfo * oInfo );
+    HRESULT SetFollowUpFlag (
+        struct IMailInfo * oInfo,
+        _bstr_t FollowUpFlag );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Append (
+        /*[in]*/ struct IImap4Folder * oFolder,
+        /*[in]*/ VARIANT data ) = 0;
+      virtual HRESULT __stdcall raw_AppendEx (
+        /*[in]*/ struct IImap4Folder * oFolder,
+        /*[in]*/ VARIANT data,
+        /*[in]*/ BSTR Flags,
+        /*[in]*/ DATE MailDateTime ) = 0;
+      virtual HRESULT __stdcall raw_ChangeMailFlags (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[in]*/ BSTR Flags ) = 0;
+      virtual HRESULT __stdcall raw_Close ( ) = 0;
+      virtual HRESULT __stdcall raw_Connect (
+        /*[in]*/ struct IMailServer * oServer ) = 0;
+      virtual HRESULT __stdcall raw_Copy (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[in]*/ struct IImap4Folder * oFolder ) = 0;
+      virtual HRESULT __stdcall raw_CreateFolder (
+        /*[in]*/ struct IImap4Folder * RootFolder,
+        /*[in]*/ BSTR FolderName,
+        /*[out,retval]*/ struct IImap4Folder * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Delete (
+        /*[in]*/ struct IMailInfo * oInfo ) = 0;
+      virtual HRESULT __stdcall raw_DeleteFolder (
+        /*[in]*/ struct IImap4Folder * oFolder ) = 0;
+      virtual HRESULT __stdcall raw_Expunge ( ) = 0;
+      virtual HRESULT __stdcall raw_GetMail (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[out,retval]*/ struct IMail * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetMailHeader (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetMailInfos (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Logout ( ) = 0;
+      virtual HRESULT __stdcall raw_Quit ( ) = 0;
+      virtual HRESULT __stdcall raw_ReConnect ( ) = 0;
+      virtual HRESULT __stdcall raw_Reset ( ) = 0;
+      virtual HRESULT __stdcall raw_SearchMail (
+        /*[in]*/ BSTR Condition,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SelectFolder (
+        /*[in]*/ struct IImap4Folder * oFolder ) = 0;
+      virtual HRESULT __stdcall raw_SubscribeFolder (
+        /*[in]*/ struct IImap4Folder * oFolder ) = 0;
+      virtual HRESULT __stdcall raw_UnsubscribeFolder (
+        /*[in]*/ struct IImap4Folder * oFolder ) = 0;
+      virtual HRESULT __stdcall raw_WriteLog (
+        /*[in]*/ BSTR v ) = 0;
+      virtual HRESULT __stdcall get_Connected (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall get_Conversation (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_CRLFAfterAppendCommand (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_CRLFAfterAppendCommand (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_CurrentMailServer (
+        /*[out,retval]*/ struct IMailServer * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Imap4Folders (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_LogFileName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LogFileName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PreviousCommand (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_SelectedFolder (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Tag (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Tag (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_Timeout (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Timeout (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_LicenseCode (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LicenseCode (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetMailsByQueue (
+        /*[in]*/ struct IMailServer * oServer,
+        /*[in]*/ BSTR DownloadFolder,
+        /*[in]*/ VARIANT_BOOL LeaveCopy ) = 0;
+      virtual HRESULT __stdcall raw_RenameFolder (
+        /*[in]*/ struct IImap4Folder * oFolder,
+        /*[in]*/ BSTR NewName ) = 0;
+      virtual HRESULT __stdcall get_RemoveDoubleDot (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_RemoveDoubleDot (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_MarkAsRead (
+        /*[in]*/ struct IMailInfo * oInfo,
+        VARIANT_BOOL Read ) = 0;
+      virtual HRESULT __stdcall raw_RefreshMailInfos ( ) = 0;
+      virtual HRESULT __stdcall raw_RefreshFolders ( ) = 0;
+      virtual HRESULT __stdcall raw_Move (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[in]*/ struct IImap4Folder * oFolder ) = 0;
+      virtual HRESULT __stdcall raw_Undelete (
+        /*[in]*/ struct IMailInfo * oInfo ) = 0;
+      virtual HRESULT __stdcall raw_QueryEWSPublicFolders (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_LastErrorDescription (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LastErrorDescription (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_NOOP ( ) = 0;
+      virtual HRESULT __stdcall raw_WaitNewEmail (
+        long WaitTimeout,
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall raw_CancelWaitEmail ( ) = 0;
+      virtual HRESULT __stdcall get_GetMailInfosParam (
+        /*[out,retval]*/ struct IGetMailInfosParamType * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetMailCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Delimiter (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetMailInfoList (
+        /*[out,retval]*/ struct IMailInfoCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetFolderList (
+        /*[out,retval]*/ struct IFolderCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetEWSPublicFolderList (
+        /*[out,retval]*/ struct IFolderCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetEWSCategories (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[out,retval]*/ struct ICategoryCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_UpdateEWSCategories (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[in]*/ struct ICategoryCollection * oCategories ) = 0;
+      virtual HRESULT __stdcall raw_FetchMails (
+        /*[in]*/ VARIANT_BOOL HeaderOnly,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SearchMailList (
+        /*[in]*/ BSTR Condition,
+        /*[out,retval]*/ struct IMailInfoCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_EncodeImap4FolderName (
+        /*[in]*/ BSTR FolderName,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_DecodeImap4FolderName (
+        /*[in]*/ BSTR FolderName,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetCategories (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[out,retval]*/ struct ICategoryCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SetCategories (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[in]*/ struct ICategoryCollection * oCategories ) = 0;
+      virtual HRESULT __stdcall raw_GetFollowUpFlag (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SetFollowUpFlag (
+        /*[in]*/ struct IMailInfo * oInfo,
+        /*[in]*/ BSTR FollowUpFlag ) = 0;
+};
+
+struct __declspec(uuid("860ea4de-9b7d-4c1b-8dc0-67b74b981f41"))
+IImap4Folder : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetFullPath,put=PutFullPath))
+    _bstr_t FullPath;
+    __declspec(property(get=GetIMAP4FolderFlags,put=PutIMAP4FolderFlags))
+    _bstr_t IMAP4FolderFlags;
+    __declspec(property(get=GetLocalPath,put=PutLocalPath))
+    _bstr_t LocalPath;
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetSubscribed,put=PutSubscribed))
+    VARIANT_BOOL Subscribed;
+    __declspec(property(get=GetServerPath,put=PutServerPath))
+    _bstr_t ServerPath;
+    __declspec(property(get=GetSubFolders))
+    _variant_t SubFolders;
+    __declspec(property(get=GetNoSelect,put=PutNoSelect))
+    VARIANT_BOOL NoSelect;
+    __declspec(property(get=GetChangeKey,put=PutChangeKey))
+    _bstr_t ChangeKey;
+    __declspec(property(get=GetUID,put=PutUID))
+    _bstr_t UID;
+    __declspec(property(get=GetEWSPublicFolder,put=PutEWSPublicFolder))
+    VARIANT_BOOL EWSPublicFolder;
+    __declspec(property(get=GetSubFolderList,put=PutSubFolderList))
+    IFolderCollectionPtr SubFolderList;
+    __declspec(property(get=GetHasChildren,put=PutHasChildren))
+    VARIANT_BOOL HasChildren;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetFullPath ( );
+    void PutFullPath (
+        _bstr_t pVal );
+    _bstr_t GetIMAP4FolderFlags ( );
+    void PutIMAP4FolderFlags (
+        _bstr_t pVal );
+    _bstr_t GetLocalPath ( );
+    void PutLocalPath (
+        _bstr_t pVal );
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    VARIANT_BOOL GetSubscribed ( );
+    void PutSubscribed (
+        VARIANT_BOOL pVal );
+    _bstr_t GetServerPath ( );
+    void PutServerPath (
+        _bstr_t pVal );
+    _variant_t GetSubFolders ( );
+    HRESULT Init (
+        const _variant_t & newVal );
+    VARIANT_BOOL GetNoSelect ( );
+    void PutNoSelect (
+        VARIANT_BOOL pVal );
+    _bstr_t GetChangeKey ( );
+    void PutChangeKey (
+        _bstr_t pVal );
+    _bstr_t GetUID ( );
+    void PutUID (
+        _bstr_t pVal );
+    IImap4FolderPtr FindChild (
+        _bstr_t Name );
+    IImap4FolderPtr Find (
+        const _variant_t & Folders,
+        _bstr_t Name );
+    VARIANT_BOOL GetEWSPublicFolder ( );
+    void PutEWSPublicFolder (
+        VARIANT_BOOL pVal );
+    IFolderCollectionPtr GetSubFolderList ( );
+    void PutSubFolderList (
+        struct IFolderCollection * pVal );
+    VARIANT_BOOL GetHasChildren ( );
+    void PutHasChildren (
+        VARIANT_BOOL pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_FullPath (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_FullPath (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_IMAP4FolderFlags (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_IMAP4FolderFlags (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_LocalPath (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_LocalPath (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Name (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Subscribed (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_Subscribed (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ServerPath (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ServerPath (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_SubFolders (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Init (
+        /*[in]*/ VARIANT newVal ) = 0;
+      virtual HRESULT __stdcall get_NoSelect (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_NoSelect (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_ChangeKey (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ChangeKey (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_UID (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_UID (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall raw_FindChild (
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IImap4Folder * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Find (
+        /*[in]*/ VARIANT Folders,
+        /*[in]*/ BSTR Name,
+        /*[out,retval]*/ struct IImap4Folder * * pVal ) = 0;
+      virtual HRESULT __stdcall get_EWSPublicFolder (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_EWSPublicFolder (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall get_SubFolderList (
+        /*[out,retval]*/ struct IFolderCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall put_SubFolderList (
+        /*[in]*/ struct IFolderCollection * pVal ) = 0;
+      virtual HRESULT __stdcall get_HasChildren (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_HasChildren (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+};
+
+struct __declspec(uuid("2bd47f56-8b9e-4b8f-a253-63c9d79bd674"))
+IFolderCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetLength))
+    long Length;
+    __declspec(property(get=GetItem))
+    IImap4FolderPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    long GetLength ( );
+    IImap4FolderPtr GetItem (
+        long Index );
+    IImap4FolderPtr IndexOf (
+        long Index );
+    HRESULT Add (
+        struct IImap4Folder * Folder );
+    HRESULT Insert (
+        long Index,
+        struct IImap4Folder * Folder );
+    HRESULT Clear ( );
+    HRESULT Remove (
+        struct IImap4Folder * Folder );
+    HRESULT RemoveAt (
+        long Index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Length (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IImap4Folder * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_IndexOf (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ struct IImap4Folder * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct IImap4Folder * Folder ) = 0;
+      virtual HRESULT __stdcall raw_Insert (
+        /*[in]*/ long Index,
+        /*[in]*/ struct IImap4Folder * Folder ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ struct IImap4Folder * Folder ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAt (
+        /*[in]*/ long Index ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "eagetmailobj.tli"
+
+} // namespace EAGetMailObjLib
+
+#pragma pack(pop)
