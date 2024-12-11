@@ -1,0 +1,164 @@
+Service Name                                      Display Name                                      
+----------------------------------------------------------------------------------------------------
+AdobeFlashPlayerUpdateSvc                         Adobe Flash Player Update Service                 
+ALG                                               Application Layer Gateway Service                 
+AppIDSvc                                          Application Identity                              
+AppReadiness                                      App Readiness                                     
+ApxSvc                                            Windows Virtual Audio Device Proxy Service        
+autotimesvc                                       Cellular Time                                     
+AxInstSV                                          ActiveX Installer (AxInstSV)                      
+BDESVC                                            BitLocker Drive Encryption Service                
+ClipSVC                                           Client License Service (ClipSVC)                  
+coccoc                                            CÑc CÑc Update Service (coccoc)                   
+CocCocElevationService                            CocCoc Elevation Service (CocCocElevationService) 
+coccocm                                           CÑc CÑc Update Service (coccocm)                  
+COMSysApp                                         COM+ System Application                           
+dcsvc                                             Declared Configuration(DC) service                
+defragsvc                                         Optimize drives                                   
+DellClientManagementService                       Dell Client Management Service                    
+DellTechHub                                       Dell TechHub                                      
+DevQueryBroker                                    DevQuery Background Discovery Broker              
+diagsvc                                           Diagnostic Execution Service                      
+DmEnrollmentSvc                                   Device Management Enrollment Service              
+dmwappushservice                                  Device Management Wireless Application Protocol (WAP) Push message Routing Service
+dot3svc                                           Wired AutoConfig                                  
+DsmSvc                                            Device Setup Manager                              
+EapHost                                           Extensible Authentication Protocol                
+edgeupdate                                        Microsoft Edge Update Service (edgeupdate)        
+edgeupdatem                                       Microsoft Edge Update Service (edgeupdatem)       
+EFS                                               Encrypting File System (EFS)                      
+embeddedmode                                      Embedded Mode                                     
+EntAppSvc                                         Enterprise App Management Service                 
+Fax                                               Fax                                               
+fhsvc                                             File History Service                              
+FileSyncHelper                                    FileSyncHelper                                    
+FrameServer                                       Windows Camera Frame Server                       
+FrameServerMonitor                                Windows Camera Frame Server Monitor               
+GameInputSvc                                      GameInput Service                                 
+GoogleChromeElevationService                      Google Chrome Elevation Service (GoogleChromeElevationService)
+GoogleUpdaterInternalService132.0.6833.0          Google Updater Internal Service (GoogleUpdaterInternalService132.0.6833.0)
+GoogleUpdaterService132.0.6833.0                  Google Updater Service (GoogleUpdaterService132.0.6833.0)
+gpsvc                                             Group Policy Client                               
+GraphicsPerfSvc                                   GraphicsPerfSvc                                   
+iaStorAfsService                                  Intel(R) Optane(TM) Memory Service                
+icssvc                                            Windows Mobile Hotspot Service                    
+IKEEXT                                            IKE and AuthIP IPsec Keying Modules               
+Intel(R) TPM Provisioning Service                 Intel(R) TPM Provisioning Service                 
+InventorySvc                                      Inventory and Compatibility Appraisal service     
+IpxlatCfgSvc                                      IP Translation Configuration Service              
+KtmRm                                             KtmRm for Distributed Transaction Coordinator     
+lltdsvc                                           Link-Layer Topology Discovery Mapper              
+LocalKdc                                          Kerberos Local Key Distribution Center            
+LxpSvc                                            Language Experience Service                       
+MapsBroker                                        Downloaded Maps Manager                           
+McpManagementService                              McpManagementService                              
+MicrosoftEdgeElevationService                     Microsoft Edge Elevation Service (MicrosoftEdgeElevationService)
+MSDTC                                             Distributed Transaction Coordinator               
+MSiSCSI                                           Microsoft iSCSI Initiator Service                 
+msiserver                                         Windows Installer                                 
+NaturalAuthentication                             Natural Authentication                            
+NcaSvc                                            Network Connectivity Assistant                    
+NcdAutoSetup                                      Network Connected Devices Auto-Setup              
+Netlogon                                          Netlogon                                          
+NetSetupSvc                                       Network Setup Service                             
+NetTcpPortSharing                                 Net.Tcp Port Sharing Service                      
+NlaSvc                                            Network Location Awareness                        
+OneDrive Updater Service                          OneDrive Updater Service                          
+perceptionsimulation                              Windows Perception Simulation Service             
+PerfHost                                          Performance Counter DLL Host                      
+pla                                               Performance Logs & Alerts                         
+PolicyAgent                                       IPsec Policy Agent                                
+PrintDeviceConfigurationService                   Print Device Configuration Service                
+PrintNotify                                       Printer Extensions and Notifications              
+PrintScanBrokerService                            PrintScanBrokerService                            
+PushToInstall                                     Windows PushToInstall Service                     
+QWAVE                                             Quality Windows Audio Video Experience            
+RasAuto                                           Remote Access Auto Connection Manager             
+refsdedupsvc                                      ReFS Dedup Service                                
+RemoteAccess                                      Routing and Remote Access                         
+RemoteRegistry                                    Remote Registry                                   
+RetailDemo                                        Retail Demo Service                               
+RNDBWM                                            Rivet Dynamic Bandwidth Management                
+RpcLocator                                        Remote Procedure Call (RPC) Locator               
+ScDeviceEnum                                      Smart Card Device Enumeration Service             
+SCPolicySvc                                       Smart Card Removal Policy                         
+SDRSVC                                            Windows Backup                                    
+seclogon                                          Secondary Logon                                   
+SEMgrSvc                                          Payments and NFC/SE Manager                       
+SensorDataService                                 Sensor Data Service                               
+SensrSvc                                          Sensor Monitoring Service                         
+SessionEnv                                        Remote Desktop Configuration                      
+SgrmBroker                                        System Guard Runtime Monitor Broker               
+shpamsvc                                          Shared PC Account Manager                         
+smphost                                           Microsoft Storage Spaces SMP                      
+SmsRouter                                         Microsoft Windows SMS Router Service.             
+SNMPTrap                                          SNMP Trap                                         
+sppsvc                                            Software Protection                               
+ssh-agent                                         OpenSSH Authentication Agent                      
+SupportAssistAgent                                Dell SupportAssist                                
+svsvc                                             Spot Verifier                                     
+swprv                                             Microsoft Software Shadow Copy Provider           
+TermService                                       Remote Desktop Services                           
+TieringEngineService                              Storage Tiers Management                          
+TroubleshootingSvc                                Recommended Troubleshooting Service               
+TrustedInstaller                                  Windows Modules Installer                         
+tzautoupdate                                      Auto Time Zone Updater                            
+UmRdpService                                      Remote Desktop Services UserMode Port Redirector  
+vds                                               Virtual Disk                                      
+vmcompute                                         Hyper-V Host Compute Service                      
+vmicguestinterface                                Hyper-V Guest Service Interface                   
+vmicheartbeat                                     Hyper-V Heartbeat Service                         
+vmickvpexchange                                   Hyper-V Data Exchange Service                     
+vmicrdv                                           Hyper-V Remote Desktop Virtualization Service     
+vmicshutdown                                      Hyper-V Guest Shutdown Service                    
+vmictimesync                                      Hyper-V Time Synchronization Service              
+vmicvmsession                                     Hyper-V PowerShell Direct Service                 
+vmicvss                                           Hyper-V Volume Shadow Copy Requestor              
+VmwareAutostartService                            VMware Autostart Service                          
+VSInstallerElevationService                       Visual Studio Installer Elevation Service         
+VSS                                               Volume Shadow Copy                                
+W32Time                                           Windows Time                                      
+WaaSMedicSvc                                      WaaSMedicSvc                                      
+WalletService                                     WalletService                                     
+WarpJITSvc                                        Warp JIT Service                                  
+wbengine                                          Block Level Backup Engine Service                 
+WbioSrvc                                          Windows Biometric Service                         
+wcncsvc                                           Windows Connect Now - Config Registrar            
+WebClient                                         WebClient                                         
+Wecsvc                                            Windows Event Collector                           
+WEPHOSTSVC                                        Windows Encryption Provider Host Service          
+wercplsupport                                     Problem Reports Control Panel Support             
+WerSvc                                            Windows Error Reporting Service                   
+WFDSConMgrSvc                                     Wi-Fi Direct Services Connection Manager Service  
+WiaRpc                                            Still Image Acquisition Events                    
+WinRM                                             Windows Remote Management (WS-Management)         
+wisvc                                             Windows Insider Service                           
+wlidsvc                                           Microsoft Account Sign-in Assistant               
+wlpasvc                                           Local Profile Assistant Service                   
+WManSvc                                           Windows Management Service                        
+wmiApSrv                                          WMI Performance Adapter                           
+WMPNetworkSvc                                     Windows Media Player Network Sharing Service      
+workfolderssvc                                    Work Folders                                      
+WpcMonSvc                                         Parental Controls                                 
+WPDBusEnum                                        Portable Device Enumerator Service                
+WslInstaller                                      Windows Subsystem for Linux                       
+wuauserv                                          Windows Update                                    
+WwanSvc                                           WWAN AutoConfig                                   
+XblAuthManager                                    Xbox Live Auth Manager                            
+XblGameSave                                       Xbox Live Game Save                               
+XboxGipSvc                                        Xbox Accessory Management Service                 
+XboxNetApiSvc                                     Xbox Live Networking Service                      
+AarSvc_5180088f                                   Agent Activation Runtime_5180088f                 
+BcastDVRUserService_5180088f                      GameDVR and Broadcast User Service_5180088f       
+CaptureService_5180088f                           CaptureService_5180088f                           
+CloudBackupRestoreSvc_5180088f                    Cloud Backup and Restore Service_5180088f         
+ConsentUxUserSvc_5180088f                         ConsentUX User Service_5180088f                   
+CredentialEnrollmentManagerUserSvc_5180088f       CredentialEnrollmentManagerUserSvc_5180088f       
+DeviceAssociationBrokerSvc_5180088f               DeviceAssociationBroker_5180088f                  
+DevicePickerUserSvc_5180088f                      DevicePicker_5180088f                             
+MessagingService_5180088f                         MessagingService_5180088f                         
+P9RdrService_5180088f                             P9RdrService_5180088f                             
+PimIndexMaintenanceSvc_5180088f                   Contact Data_5180088f                             
+PrintWorkflowUserSvc_5180088f                     PrintWorkflow_5180088f                            
+UnistoreSvc_5180088f                              User Data Storage_5180088f                        
+UserDataSvc_5180088f                              User Data Access_5180088f                         
