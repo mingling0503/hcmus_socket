@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/clientapp">
+        <file>fonts/cooperli.ttf</file>
+        <file>fonts/coopermi.ttf</file>
+        <file>fonts/coopbli.ttf</file>
+        <file>content/about.txt</file>
+        <file>content/help.txt</file>
+    </qresource>
+</RCC>

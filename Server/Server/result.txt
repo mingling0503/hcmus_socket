@@ -1,0 +1,150 @@
+Service Name                                      PID       Display Name                                      
+--------------------------------------------------------------------------------------------------------------
+Appinfo                                           12044     Application Information                           
+AppXSvc                                           17852     AppX Deployment Service (AppXSVC)                 
+AudioEndpointBuilder                              3884      Windows Audio Endpoint Builder                    
+Audiosrv                                          3088      Windows Audio                                     
+BFE                                               3984      Base Filtering Engine                             
+Bonjour Service                                   5004      Bonjour Service                                   
+BrokerInfrastructure                              1284      Background Tasks Infrastructure Service           
+Browser                                           10516     Computer Browser                                  
+BTAGService                                       1972      Bluetooth Audio Gateway Service                   
+BthAvctpSvc                                       2012      AVCTP service                                     
+bthserv                                           2020      Bluetooth Support Service                         
+camsvc                                            4700      Capability Access Manager Service                 
+CDPSvc                                            9956      Connected Devices Platform Service                
+CertPropSvc                                       7288      Certificate Propagation                           
+ClickToRunSvc                                     5044      Microsoft Office Click-to-Run Service             
+CoreMessagingRegistrar                            1924      CoreMessaging                                     
+cplspcon                                          2540      Intel(R) Content Protection HDCP Service          
+CryptSvc                                          5020      Cryptographic Services                            
+DcomLaunch                                        1284      DCOM Server Process Launcher                      
+Dell Digital Delivery Services                    11852     Dell Digital Delivery Services                    
+Dell SupportAssist Remediation                    15248     Dell SupportAssist Remediation                    
+DeviceAssociationService                          1512      Device Association Service                        
+DeviceInstall                                     9664      Device Install Service                            
+Dhcp                                              2356      DHCP Client                                       
+DiagTrack                                         5032      Connected User Experiences and Telemetry          
+DispBrokerDesktopSvc                              2656      Display Policy Service                            
+DisplayEnhancementService                         2608      Display Enhancement Service                       
+Dnscache                                          2148      DNS Client                                        
+DoSvc                                             15968     Delivery Optimization                             
+DPS                                               5052      Diagnostic Policy Service                         
+DsSvc                                             13588     Data Sharing Service                              
+DusmSvc                                           4316      Data Usage                                        
+esifsvc                                           4220      Intel(R) Dynamic Tuning service                   
+EventLog                                          3464      Windows Event Log                                 
+EventSystem                                       3516      COM+ Event System                                 
+fdPHost                                           5012      Function Discovery Provider Host                  
+FDResPub                                          5572      Function Discovery Resource Publication           
+FontCache                                         3876      Windows Font Cache Service                        
+FusionService                                     2348      Fusion Service                                    
+GamingServices                                    8368      Gaming Services                                   
+GamingServicesNet                                 9128      Gaming Services                                   
+gpsvc                                             14648     Group Policy Client                               
+hidserv                                           2760      Human Interface Device Service                    
+hns                                               1724      Host Network Service                              
+HPPrintScanDoctorService                          5080      HP Print Scan Doctor Service                      
+HvHost                                            1900      HV Host Service                                   
+igccservice                                       5116      Intel(R) Graphics Command Center Service          
+igfxCUIService2.0.0.0                             3808      Intel(R) HD Graphics Control Panel Service        
+InstallService                                    9824      Microsoft Store Install Service                   
+IntelAudioService                                 4200      Intel(R) Audio Service                            
+InventorySvc                                      8176      Inventory and Compatibility Appraisal service     
+iphlpsvc                                          4172      IP Helper                                         
+jhi_service                                       4448      Intel(R) Dynamic Application Loader Host Interface Service
+KeyIso                                            1160      CNG Key Isolation                                 
+LanmanServer                                      5480      Server                                            
+LanmanWorkstation                                 4936      Workstation                                       
+lfsvc                                             12240     Geolocation Service                               
+LicenseManager                                    9488      Windows License Manager Service                   
+lmhosts                                           16544     TCP/IP NetBIOS Helper                             
+LSM                                               1516      Local Session Manager                             
+MDCoreSvc                                         5280      Microsoft Defender Core Service                   
+mpssvc                                            3984      Windows Defender Firewall                         
+MTAgentService                                    4972      MTAgentService                                    
+MTSchedulerService                                5128      MTSchedulerService                                
+NcbService                                        2140      Network Connection Broker                         
+Netman                                            5488      Network Connections                               
+netprofm                                          2228      Network List Service                              
+NgcCtnrSvc                                        4916      Microsoft Passport Container                      
+NgcSvc                                            17252     Microsoft Passport                                
+nsi                                               1944      Network Store Interface Service                   
+nvagent                                           5396      Network Virtualization Service                    
+PcaSvc                                            11880     Program Compatibility Assistant Service           
+PhoneSvc                                          3396      Phone Service                                     
+PlugPlay                                          1284      Plug and Play                                     
+Power                                             1284      Power                                             
+ProfSvc                                           2388      User Profile Service                              
+RAPSService                                       7652      Rivet AP Selector Service                         
+RasMan                                            7312      Remote Access Connection Manager                  
+RmSvc                                             10208     Radio Management Service                          
+RpcEptMapper                                      1472      RPC Endpoint Mapper                               
+RpcSs                                             1472      Remote Procedure Call (RPC)                       
+RstMwService                                      5236      Intel(R) Storage Middleware Service               
+RtkAudioUniversalService                          5248      Realtek Audio Universal Service                   
+SamSs                                             1160      Security Accounts Manager                         
+SCardSvr                                          7300      Smart Card                                        
+Schedule                                          2176      Task Scheduler                                    
+seclogon                                          8436      Secondary Logon                                   
+SecurityHealthService                             824       Windows Security Service                          
+SENS                                              3716      System Event Notification Service                 
+SessionSvc                                        5304      Session Detection                                 
+SharedAccess                                      7172      Internet Connection Sharing (ICS)                 
+ShellHWDetection                                  4572      Shell Hardware Detection                          
+SmartByte Analytics Service                       5312      SmartByte Analytics Service                       
+SmartByte Network Service x64                     5320      SmartByte Network Service                         
+Spooler                                           4752      Print Spooler                                     
+SQLWriter                                         5328      SQL Server VSS Writer                             
+SSDPSRV                                           4864      SSDP Discovery                                    
+SstpSvc                                           5448      Secure Socket Tunneling Protocol Service          
+StateRepository                                   4128      State Repository Service                          
+StiSvc                                            5404      Windows Image Acquisition (WIA)                   
+StorSvc                                           9204      Storage Service                                   
+SysMain                                           3552      SysMain                                           
+SystemEventsBroker                                1284      System Events Broker                              
+TapiSrv                                           6432      Telephony                                         
+TbtP2pShortcutService                             5420      Thunderbolt(TM) Peer to Peer Shortcut             
+TeamViewer                                        5500      TeamViewer                                        
+TextInputManagementService                        3064      Text Input Management Service                     
+Themes                                            3568      Themes                                            
+TimeBrokerSvc                                     2156      Time Broker                                       
+TokenBroker                                       5852      Web Account Manager                               
+TrkWks                                            5716      Distributed Link Tracking Client                  
+UltraViewService                                  5556      UltraViewer Service                               
+UserManager                                       2596      User Manager                                      
+UsoSvc                                            10196     Update Orchestrator Service                       
+VaultSvc                                          1160      Credential Manager                                
+VMAuthdService                                    6444      VMware Authorization Service                      
+VMnetDHCP                                         5816      VMware DHCP Service                               
+VMUSBArbService                                   6452      VMware USB Arbitration Service                    
+VMware NAT Service                                5800      VMware NAT Service                                
+VSStandardCollectorService150                     20860     Visual Studio Standard Collector Service 150      
+WavesAudioService                                 5876      Waves Audio Universal Services                    
+WavesSysSvc                                       5888      Waves Audio Services                              
+Wcmsvc                                            3144      Windows Connection Manager                        
+wcncsvc                                           2432      Windows Connect Now - Config Registrar            
+WdiServiceHost                                    14416     Diagnostic Service Host                           
+WdiSystemHost                                     3280      Diagnostic System Host                            
+WdNisSvc                                          7776      Microsoft Defender Antivirus Network Inspection Service
+webthreatdefsvc                                   4380      Web Threat Defense Service                        
+WinDefend                                         5908      Microsoft Defender Antivirus Service              
+WinHttpAutoProxySvc                               2800      WinHTTP Web Proxy Auto-Discovery Service          
+Winmgmt                                           5564      Windows Management Instrumentation                
+WlanSvc                                           4536      WLAN AutoConfig                                   
+wlidsvc                                           2216      Microsoft Account Sign-in Assistant               
+WMIRegistrationService                            5900      Intel(R) Management Engine WMI Provider Registration
+WpnService                                        5600      Windows Push Notifications System Service         
+wscsvc                                            6588      Security Center                                   
+WSearch                                           13136     Windows Search                                    
+WSLService                                        6092      WSL Service                                       
+BluetoothUserService_1eb1631e                     13480     Bluetooth User Support Service_1eb1631e           
+cbdhsvc_1eb1631e                                  3276      Clipboard User Service_1eb1631e                   
+CDPUserSvc_1eb1631e                               12220     Connected Devices Platform User Service_1eb1631e  
+DevicesFlowUserSvc_1eb1631e                       13124     DevicesFlow_1eb1631e                              
+NPSMSvc_1eb1631e                                  9088      Now Playing Session Manager Service_1eb1631e      
+OneSyncSvc_1eb1631e                               18316     Sync Host_1eb1631e                                
+PenService_1eb1631e                               14204     PenService_1eb1631e                               
+UdkUserSvc_1eb1631e                               17136     Udk User Service_1eb1631e                         
+webthreatdefusersvc_1eb1631e                      17164     Web Threat Defense User Service_1eb1631e          
+WpnUserService_1eb1631e                           17460     Windows Push Notifications User Service_1eb1631e  

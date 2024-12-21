@@ -1,0 +1,23 @@
+To use the service, log in or register an account.
+Send email to Client Gmail: almondsrabbit@gmail.com
+
+Content email format:
+
+Line 1: The IP address of the PC that you want to control.
+Line 2 (and following lines): Requests with correct syntax.
+
+Syntaxes (and return type):
+
+1. List all apps running on server: GetAppRunning (return .txt file)
+2. List all service running on server: GetServiceRunning (return .txt file)
+3. Start app: StartApp-<app name (or path to app.exe)> (return message)
+4. End app: EndApp-<app name (or path to app.exe)> (return message)
+5. Start service: StartService-<service name> (return message)
+6. End service: EndService-<service name> (return message)
+7. Start server webcam: StartWebcam-<number of seconds> (return .mp4 file)
+8. Get file on server: GetFile-<file path> (return file)
+9. Delete file on server: DeleteFile-<file path>
+
+IMPORTANT NOTE: IN EMAIL CONTENT, END OF EACH LINE MUST BE A SEMICOLON (';')
+
+Advice: If the file name is too long (over the width of mail box), you should separate it into the following lines (while doing so you don't need to add ';' until end of file name)
